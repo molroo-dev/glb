@@ -1,0 +1,6 @@
+"Red Panda" by kenchoo
+https://sketchfab.com/3d-models/red-panda-c003c2985e0e462684063a893a0e85ee
+License: CC Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)
+
+Modified: red-panda.glb is decimated (82k -> 10k triangles), resampled,
+quantized, black emissive maps removed, textures resized to 1024 WebP.
