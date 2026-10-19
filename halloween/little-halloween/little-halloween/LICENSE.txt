@@ -1,0 +1,18 @@
+Little Halloween asset pack — License
+
+You may:
+- Use these assets in personal and commercial projects (games, apps, videos, websites, prototypes).
+- Modify, recolor, resize and combine them with your own work.
+- Ship them inside a finished product that is compiled, packaged or rendered.
+
+You may not:
+- Resell, redistribute, share or give away the asset files themselves, modified or not,
+  alone or as part of another asset pack, template or library.
+- Upload them to asset stores, AI training datasets or free download sites.
+- Claim the original assets as your own creation.
+
+Credit is appreciated but not required.
+
+Disclosure: these assets were created with AI-assisted Blender modeling code (Anthropic Claude). No AI-generated meshes, images or textures are included.
+
+The assets are provided "as is", without warranty of any kind.

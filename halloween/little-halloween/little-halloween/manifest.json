@@ -1,0 +1,309 @@
+{
+ "pack": "Little Halloween",
+ "version": "1.0",
+ "count": 30,
+ "units": "meters",
+ "production": "AI-assisted Blender Python modeling code (Anthropic Claude). No AI-generated meshes, images or textures.",
+ "assets": [
+  {
+   "id": "pumpkin",
+   "category": "pumpkins",
+   "triangles": 1960,
+   "dimensions_m": [
+    0.3,
+    0.255,
+    0.3
+   ]
+  },
+  {
+   "id": "pumpkin_small",
+   "category": "pumpkins",
+   "triangles": 1964,
+   "dimensions_m": [
+    0.16,
+    0.149,
+    0.147
+   ]
+  },
+  {
+   "id": "jack_o_lantern",
+   "category": "pumpkins",
+   "triangles": 2080,
+   "dimensions_m": [
+    0.3,
+    0.275,
+    0.3
+   ]
+  },
+  {
+   "id": "pumpkin_stack",
+   "category": "pumpkins",
+   "triangles": 5772,
+   "dimensions_m": [
+    0.28,
+    0.434,
+    0.28
+   ]
+  },
+  {
+   "id": "white_pumpkin_pair",
+   "category": "pumpkins",
+   "triangles": 3924,
+   "dimensions_m": [
+    0.36,
+    0.194,
+    0.22
+   ]
+  },
+  {
+   "id": "ghost",
+   "category": "characters",
+   "triangles": 3028,
+   "dimensions_m": [
+    0.418,
+    0.32,
+    0.26
+   ]
+  },
+  {
+   "id": "black_cat",
+   "category": "characters",
+   "triangles": 1728,
+   "dimensions_m": [
+    0.14,
+    0.248,
+    0.303
+   ]
+  },
+  {
+   "id": "bat",
+   "category": "characters",
+   "triangles": 496,
+   "dimensions_m": [
+    0.3,
+    0.087,
+    0.053
+   ]
+  },
+  {
+   "id": "scarecrow",
+   "category": "characters",
+   "triangles": 2636,
+   "dimensions_m": [
+    0.943,
+    1.47,
+    0.4
+   ]
+  },
+  {
+   "id": "witch_hat",
+   "category": "magic",
+   "triangles": 840,
+   "dimensions_m": [
+    0.42,
+    0.324,
+    0.42
+   ]
+  },
+  {
+   "id": "cauldron",
+   "category": "magic",
+   "triangles": 2012,
+   "dimensions_m": [
+    0.411,
+    0.341,
+    0.4
+   ]
+  },
+  {
+   "id": "potion_bottles",
+   "category": "magic",
+   "triangles": 1584,
+   "dimensions_m": [
+    0.194,
+    0.2,
+    0.129
+   ]
+  },
+  {
+   "id": "spell_book",
+   "category": "magic",
+   "triangles": 468,
+   "dimensions_m": [
+    0.224,
+    0.06,
+    0.189
+   ]
+  },
+  {
+   "id": "crystal_ball",
+   "category": "magic",
+   "triangles": 1504,
+   "dimensions_m": [
+    0.15,
+    0.205,
+    0.15
+   ]
+  },
+  {
+   "id": "broom",
+   "category": "magic",
+   "triangles": 172,
+   "dimensions_m": [
+    1.02,
+    0.14,
+    0.14
+   ]
+  },
+  {
+   "id": "candles_skull",
+   "category": "magic",
+   "triangles": 1388,
+   "dimensions_m": [
+    0.12,
+    0.234,
+    0.132
+   ]
+  },
+  {
+   "id": "gravestone",
+   "category": "graveyard",
+   "triangles": 564,
+   "dimensions_m": [
+    0.5,
+    0.622,
+    0.2
+   ]
+  },
+  {
+   "id": "gravestone_cross",
+   "category": "graveyard",
+   "triangles": 372,
+   "dimensions_m": [
+    0.4,
+    0.7,
+    0.6
+   ]
+  },
+  {
+   "id": "iron_fence",
+   "category": "graveyard",
+   "triangles": 940,
+   "dimensions_m": [
+    1.27,
+    1.055,
+    0.07
+   ]
+  },
+  {
+   "id": "dead_tree",
+   "category": "graveyard",
+   "triangles": 668,
+   "dimensions_m": [
+    0.796,
+    1.417,
+    0.647
+   ]
+  },
+  {
+   "id": "lantern",
+   "category": "graveyard",
+   "triangles": 352,
+   "dimensions_m": [
+    0.16,
+    0.276,
+    0.16
+   ]
+  },
+  {
+   "id": "hay_bale",
+   "category": "graveyard",
+   "triangles": 500,
+   "dimensions_m": [
+    0.8,
+    0.447,
+    0.46
+   ]
+  },
+  {
+   "id": "coffin",
+   "category": "graveyard",
+   "triangles": 112,
+   "dimensions_m": [
+    0.34,
+    0.195,
+    0.6
+   ]
+  },
+  {
+   "id": "candy_bowl",
+   "category": "treats_decor",
+   "triangles": 1664,
+   "dimensions_m": [
+    0.3,
+    0.108,
+    0.3
+   ]
+  },
+  {
+   "id": "lollipop_set",
+   "category": "treats_decor",
+   "triangles": 1458,
+   "dimensions_m": [
+    0.18,
+    0.22,
+    0.05
+   ]
+  },
+  {
+   "id": "candy_corn_jar",
+   "category": "treats_decor",
+   "triangles": 1056,
+   "dimensions_m": [
+    0.13,
+    0.171,
+    0.13
+   ]
+  },
+  {
+   "id": "spider_web",
+   "category": "treats_decor",
+   "triangles": 572,
+   "dimensions_m": [
+    0.6,
+    0.6,
+    0.029
+   ]
+  },
+  {
+   "id": "garland",
+   "category": "treats_decor",
+   "triangles": 386,
+   "dimensions_m": [
+    1.206,
+    0.252,
+    0.007
+   ]
+  },
+  {
+   "id": "welcome_sign",
+   "category": "treats_decor",
+   "triangles": 2540,
+   "dimensions_m": [
+    0.5,
+    0.86,
+    0.18
+   ]
+  },
+  {
+   "id": "trick_or_treat_bag",
+   "category": "treats_decor",
+   "triangles": 2480,
+   "dimensions_m": [
+    0.2,
+    0.315,
+    0.175
+   ]
+  }
+ ]
+}
