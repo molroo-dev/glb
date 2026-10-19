@@ -1,0 +1,7 @@
+Shark by Quaternius
+License: CC0 1.0 Universal (Public Domain)
+https://creativecommons.org/publicdomain/zero/1.0/
+Source: https://poly.pizza/m/YYsK3gRCBZ
+Original GLB: https://static.poly.pizza/840dac4f-e6b5-4015-88d7-ceb940a4b90e.glb
+
+The original model and its embedded texture and swim animations are included.
