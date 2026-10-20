@@ -1,0 +1,8 @@
+Animals Asset Pack by styloo
+
+The itch.io asset page identifies the asset license as Creative Commons Zero v1.0 Universal (CC0 1.0).
+
+License details: https://creativecommons.org/publicdomain/zero/1.0/
+Original asset page: https://styloo.itch.io/animals
+
+This notice records the license listed on the source page. The original package did not include a separate license text file.

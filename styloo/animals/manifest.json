@@ -1,0 +1,17 @@
+{
+  "pack": "Animals Asset Pack",
+  "creator": "styloo",
+  "source": "https://styloo.itch.io/animals",
+  "license": "CC0 1.0 Universal",
+  "format": "GLB",
+  "count": 7,
+  "assets": [
+    { "id": "butterfly", "file": "glb/butterfly.glb", "source_file": "butterfly.glb" },
+    { "id": "cat", "file": "glb/cat.glb", "source_file": "cat.glb" },
+    { "id": "chicken", "file": "glb/chicken.glb", "source_file": "chichen.glb", "filename_normalized": true },
+    { "id": "cow", "file": "glb/cow.glb", "source_file": "Cow.glb", "filename_normalized": true },
+    { "id": "dog", "file": "glb/dog.glb", "source_file": "dog.glb" },
+    { "id": "giraffe", "file": "glb/giraffe.glb", "source_file": "girafe.glb", "filename_normalized": true },
+    { "id": "ladybug", "file": "glb/ladybug.glb", "source_file": "ladybug.glb" }
+  ]
+}
