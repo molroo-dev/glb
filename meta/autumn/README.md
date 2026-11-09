@@ -15,10 +15,14 @@
 | `broadleaf-lod2.glb` | 넓은잎 나무 LOD2 | 12,768 | 179 KB |
 | `narrowleaf.glb` | 좁은잎 나무 | 63,916 | 471 KB |
 | `grass-tuft.glb` | 잔디 포기 | 960 | 13 KB |
+| `maple-leaf.glb` | 떨어진 단풍잎, 흰색 양면 재질 | 44 | 4 KB |
+| `ginkgo-leaf.glb` | 떨어진 은행잎, 흰색 양면 재질 | 90 | 3 KB |
 
 ## 로더
 
 `EXT_meshopt_compression`과 `KHR_mesh_quantization` 지원이 필요하다. three.js·drei의 `useGLTF`는 MeshoptDecoder를 기본으로 연결한다. Blender 등 직접 읽지 못하는 도구는 `handmade-assets/assets/models/props/grand-christmas-tree/v005/decode.mjs`로 임시 해제한다.
+
+`maple-leaf.glb`와 `ginkgo-leaf.glb`는 크기가 작아 Meshopt 압축을 적용하지 않았다. 원점은 잎자루 밑동이고 잎은 glTF `-Z`로 뻗으며, 장면이 인스턴스 색으로 단풍색·은행색을 입힌다. 원본·검증: `/Users/molroo/workspace/handmade-assets/assets/models/vegetation/fallen-leaf/v001/README.md`.
 
 ginkgo·maple는 LOD 없이 원본 삼각형 수를 유지한다. broadleaf만 LOD0/1/2를 제공한다.
 
