@@ -1,6 +1,6 @@
 # meta/autumn — 가을 나무·잔디 배포본
 
-가을 장면용 정적 식생 GLB 11개다. 최신 원본에서 gltfpack 1.3.0 Meshopt 압축만 적용했고 삼각형 수는 원본과 같다.
+가을 장면용 정적 식생 GLB와 열차 1개다. 최신 원본에서 gltfpack 1.3.0 Meshopt 압축만 적용했고 삼각형 수는 원본과 같다.
 
 | 파일 | 용도 | 삼각형 | 크기 |
 |---|---|---:|---:|
@@ -17,6 +17,7 @@
 | `grass-tuft.glb` | 잔디 포기 | 960 | 13 KB |
 | `maple-leaf.glb` | 떨어진 단풍잎, 흰색 양면 재질 | 44 | 4 KB |
 | `ginkgo-leaf.glb` | 떨어진 은행잎, 흰색 양면 재질 | 90 | 3 KB |
+| `alpine-red-train.glb` | 알프스 빨간 미터궤 열차(기관차·파노라마·일반 객차 + 선로 58 m), 피벗 노드 `loco`·`coach_*`·`*_bogie_*`·`*_axle_*`·`loco_pantograph_*` | 423,362 | 1.8 MB |
 
 ## 로더
 
@@ -29,6 +30,7 @@ ginkgo·maple는 LOD 없이 원본 삼각형 수를 유지한다. broadleaf만 L
 ## 원본·검증
 
 - 원본: `/Users/molroo/workspace/handmade-assets/assets/models/vegetation/{golden-ginkgo/v004,autumn-maple/v003,leaf-review,grass-tuft/v003}`
+- 열차 원본·검증: `/Users/molroo/workspace/handmade-assets/assets/models/vehicles/alpine-red-train/v001/README.md`, `/Users/molroo/workspace/handmade-assets/validation/train-distribution/v001/README.md` (위치 `-vpf`, 최대 0.98 mm)
 - 최적화·검증 기록: `/Users/molroo/workspace/handmade-assets/validation/autumn-distribution/v001/README.md`
 - 배포 파일은 `EXT_meshopt_compression`을 쓰므로 무손실이 아니다. 위치 양자화 오차는 최대 0.15 mm, 잎맥 리본은 면적 기준 최대 0.8%다.
 - gltfpack이 primitive 이름을 `mesh_N`으로 바꿀 수 있다. 이름 있는 그룹 노드는 유지된다.
