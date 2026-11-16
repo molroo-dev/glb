@@ -8,10 +8,10 @@
       "file": "bob-coat.glb",
       "preview": "bob-coat.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/bob-coat/v020/model.glb",
-      "source_version": "v020",
-      "bytes": 9942796,
-      "sha256": "340c42ec8146162b37bf6e4420138391f621ef58a27c636ed866eae0f9b7d83e",
+      "source_path": "assets/models/characters/bob-coat/v022/model.glb",
+      "source_version": "v022",
+      "bytes": 9945088,
+      "sha256": "c8735c9d971bfc70a580733dfeeafe68e3d9c71c0b1c99cced89dda892164383",
       "triangles": 180762,
       "vertices": 106656,
       "meshes": [
@@ -74,7 +74,7 @@
           "max_vertex_distance_m": 0,
           "independent_instances": true
         },
-        "inherited_geometry_review": "v020 head replacement (bob-part-head v001) visual/neck/512-pose checks; body unchanged from v019; payloads exact"
+        "inherited_geometry_review": "v022 head-texture repair (bob-part-head v003); head/body geometry, smaller hands, fitted cuffs and curved neck unchanged from v020/v019; v020 512-pose checks apply; payloads exact"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -106,7 +106,7 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "760cb11ef9869811cb689d67f3e1570ba51078e82a7e9f111f298e77fb609c19",
+      "source_delivery_sha256": "b51129a1428fbadf3a7a7717e6a520091ba8d8fd4118517ebf31ebd6caf87f72",
       "delivery_transform": "Animation clips moved to shared library; unused animation accessors/buffers removed; all mesh/rig/material/image data retained"
     }
   ]
