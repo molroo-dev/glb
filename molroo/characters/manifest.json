@@ -8,12 +8,12 @@
       "file": "bob-coat.glb",
       "preview": "bob-coat.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/bob-coat/v022/model.glb",
-      "source_version": "v022",
-      "bytes": 9945088,
-      "sha256": "c8735c9d971bfc70a580733dfeeafe68e3d9c71c0b1c99cced89dda892164383",
-      "triangles": 180762,
-      "vertices": 106656,
+      "source_path": "assets/models/characters/full/bob-coat/v023/model.glb",
+      "source_version": "v023",
+      "bytes": 10063844,
+      "sha256": "68fd8b016c40778347d4022936ac3d39499afd2ba474bc5ed9921c1351fe8462",
+      "triangles": 180766,
+      "vertices": 107209,
       "meshes": [
         "Body",
         "Head",
@@ -49,7 +49,10 @@
       "known_limitations": [
         "20% coat-follow setting retains23 crossing poses in192 sampled lower-coat/pants walk ROI poses",
         "Other deep-motion folds remain; no continuous or whole-body collision guarantee",
-        "Runtime performance and game-controller integration unmeasured"
+        "Runtime performance and game-controller integration unmeasured",
+        "v023: face texture bleed and surface ripples remain",
+        "v023: full intersection comparison incomplete at max-pairs=5000000",
+        "PBR/native-engine performance not tested"
       ],
       "verification": {
         "destination_inspect": {
@@ -74,7 +77,7 @@
           "max_vertex_distance_m": 0,
           "independent_instances": true
         },
-        "inherited_geometry_review": "v022 head-texture repair (bob-part-head v003); head/body geometry, smaller hands, fitted cuffs and curved neck unchanged from v020/v019; v020 512-pose checks apply; payloads exact"
+        "inherited_geometry_review": "v023 source: new reference head and upper neck extension; 512-pose stretch checks passed; Workbench views reviewed; full intersection comparison incomplete"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -106,7 +109,7 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "b51129a1428fbadf3a7a7717e6a520091ba8d8fd4118517ebf31ebd6caf87f72",
+      "source_delivery_sha256": "83719d129af3da560a52b5d12f18830fb01f0406646435f1ebb3898be1e54527",
       "delivery_transform": "Animation clips moved to shared library; unused animation accessors/buffers removed; all mesh/rig/material/image data retained"
     }
   ]
