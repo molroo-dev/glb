@@ -5,6 +5,7 @@ Character meshes, embedded textures and rigs. **Animations are loaded separately
 | Character | Model | Preview | Shared motions |
 | --- | --- | --- | --- |
 | Bob coat | [bob-coat.glb](bob-coat.glb) | [bob-coat.png](bob-coat.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 clips |
+| Boy | [boy.glb](boy.glb) | [boy.png](boy.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 clips |
 
 ![Bob coat with shared Idle_A](bob-coat.png)
 
@@ -43,3 +44,13 @@ References were user-supplied/generated; shape/paint used Hunyuan3D Mini/Paint w
 The component CC0 notice is not a blanket license for the entire character. Staging/separation does not establish additional reference-image rights.
 
 V023 limits: face texture bleed and small surface ripples remain. Full intersection comparison exhausted the 5,000,000-pair budget; this is not complete collision validation. No new PBR/native-engine test.
+
+
+## Boy
+
+![Boy with shared Idle_A](boy.png)
+
+- Source: `handmade-assets/assets/models/characters/full/boy/v002/`. The delivered GLB is the source distribution artifact byte-for-byte: **9,546,636 bytes**, 180,760 triangles, 103,872 vertices, three meshes (Body/Head/Neck), KayKit Rig_Medium with21 joints, and two embedded1024x1024 base-color maps. Metres,+Y up,+Z forward; bind height about2.129m.
+- **Zero embedded clips.** Load `../animations/kaykit-medium.glb` and bind its16 original-name clips to a cloned character skeleton. The source distribution binding check sampled512 poses and786,432 vertex comparisons against the combined boy model; maximum bone-matrix and vertex error were both0. Destination inspect and texture-inspect also passed. The exact delivery SHA is recorded in `manifest.json`.
+- Idle shoe height is about2mm; the sampled Waving clip raises the shoes about30mm. Hair/skin texture bleed and surface artifacts remain. The full body intersection scan reached its5,000,000-pair cap. Game controls, physics, runtime FPS and performance were not measured.
+- Editable sources, detailed image comparisons and the earlier failed intersection scan are in the handmade-assets v002 source record. The local addition record is `handmade-assets/validation/molroo-characters-distribution/v006/`.

@@ -1,7 +1,7 @@
 {
   "namespace": "molroo/characters",
   "format": "GLB",
-  "count": 1,
+  "count": 2,
   "assets": [
     {
       "id": "bob-coat",
@@ -111,6 +111,115 @@
       },
       "source_delivery_sha256": "83719d129af3da560a52b5d12f18830fb01f0406646435f1ebb3898be1e54527",
       "delivery_transform": "Animation clips moved to shared library; unused animation accessors/buffers removed; all mesh/rig/material/image data retained"
+    },
+    {
+      "id": "boy",
+      "file": "boy.glb",
+      "preview": "boy.png",
+      "source_project": "handmade-assets",
+      "source_path": "assets/models/characters/full/boy/v002/distribution/boy.glb",
+      "source_version": "v002",
+      "bytes": 9546636,
+      "sha256": "c45d7035f5d463fec255155c10688ac04600a61fe354a33b96c365e3016c31f1",
+      "triangles": 180760,
+      "vertices": 103872,
+      "meshes": [
+        "Body",
+        "Head",
+        "Neck"
+      ],
+      "units": "metres",
+      "up_axis": "+Y",
+      "forward_axis": "+Z",
+      "bind_height_m": 2.129,
+      "rig": {
+        "family": "KayKit Rig_Medium",
+        "skin_joints": 21,
+        "sockets": [
+          "handslot.l",
+          "handslot.r"
+        ]
+      },
+      "animations": [],
+      "preview_clip": "Idle_A",
+      "preview_time_seconds": 0.3,
+      "preview_size_px": [
+        768,
+        768
+      ],
+      "textures": {
+        "embedded_base_color_maps": 2,
+        "size_px": [
+          1024,
+          1024
+        ]
+      },
+      "required_extensions": [],
+      "known_limitations": [
+        "Face/hair/skin texture bleed and surface irregularities remain; maps were not manually edited",
+        "Waving sample lifts the shoes about 0.03m; universal grounding is not guaranteed",
+        "Full body intersection comparison stopped at the 5,000,000-pair budget",
+        "No game controller, physics, FPS or target-runtime performance verification"
+      ],
+      "verification": {
+        "destination_inspect": {
+          "file": "H:\\assets\\glb\\molroo\\characters\\boy.glb",
+          "command": "inspect",
+          "exit": 0,
+          "issues": [],
+          "warnings": []
+        },
+        "destination_texture_inspect": {
+          "file": "H:\\assets\\glb\\molroo\\characters\\boy.glb",
+          "command": "texture-inspect",
+          "exit": 0,
+          "issues": [],
+          "warnings": []
+        },
+        "shared_animation_binding": {
+          "clips": 16,
+          "poses": 512,
+          "sampled_vertex_comparisons": 786432,
+          "max_bone_matrix_error": 0,
+          "max_vertex_distance_m": 0,
+          "independent_instances": true,
+          "evidence": "source distribution binding-check.json; delivered boy.glb is byte-identical to that tested file"
+        },
+        "grounding": "Source grounding.json: idle soles about 0.002m; Waving lifts about 0.030m; other clips vary"
+      },
+      "notices": [
+        "licenses/License-KayKit.txt",
+        "licenses/License-Hunyuan3D-2.0.txt",
+        "licenses/NOTICE-Hunyuan3D-2.0.txt"
+      ],
+      "embedded_animation_count": 0,
+      "animation_library": {
+        "id": "kaykit-medium",
+        "file": "../animations/kaykit-medium.glb",
+        "sha256": "7e2b5b4d881ffd9e089b66757c2c064006d1038bd6aefca6a93eab7440536ba1",
+        "binding": "original_node_name",
+        "clips": [
+          "Idle_A",
+          "Idle_B",
+          "Walking_A",
+          "Walking_B",
+          "Walking_Backwards",
+          "Running_A",
+          "Running_B",
+          "Cheering",
+          "Crouching",
+          "Waving",
+          "Jump_Full_Short",
+          "Jump_Full_Long",
+          "Jump_Start",
+          "Jump_Idle",
+          "Jump_Land",
+          "Melee_Unarmed_Attack_Punch_A"
+        ],
+        "grounding_reference": "bob-coat/v019"
+      },
+      "source_delivery_sha256": "c45d7035f5d463fec255155c10688ac04600a61fe354a33b96c365e3016c31f1",
+      "delivery_transform": "No geometry transform; zero embedded animations; shared clips loaded separately"
     }
   ]
 }
