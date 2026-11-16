@@ -1,0 +1,84 @@
+{
+  "namespace": "molroo/animations",
+  "format": "GLB",
+  "count": 1,
+  "assets": [
+    {
+      "id": "kaykit-medium",
+      "file": "kaykit-medium.glb",
+      "bytes": 614908,
+      "sha256": "7e2b5b4d881ffd9e089b66757c2c064006d1038bd6aefca6a93eab7440536ba1",
+      "rig_family": "KayKit Rig_Medium",
+      "joint_names": [
+        "root",
+        "hips",
+        "upperleg.l",
+        "lowerleg.l",
+        "foot.l",
+        "toes.l",
+        "spine",
+        "chest",
+        "upperarm.r",
+        "lowerarm.r",
+        "wrist.r",
+        "hand.r",
+        "head",
+        "upperarm.l",
+        "lowerarm.l",
+        "wrist.l",
+        "hand.l",
+        "upperleg.r",
+        "lowerleg.r",
+        "foot.r",
+        "toes.r"
+      ],
+      "binding": "original_node_name",
+      "clips": [
+        "Idle_A",
+        "Idle_B",
+        "Walking_A",
+        "Walking_B",
+        "Walking_Backwards",
+        "Running_A",
+        "Running_B",
+        "Cheering",
+        "Crouching",
+        "Waving",
+        "Jump_Full_Short",
+        "Jump_Full_Long",
+        "Jump_Start",
+        "Jump_Idle",
+        "Jump_Land",
+        "Melee_Unarmed_Attack_Punch_A"
+      ],
+      "clip_count": 16,
+      "meshes": 0,
+      "textures": 0,
+      "source_project": "handmade-assets",
+      "source_path": "assets/models/characters/bob-coat/v019/model.glb",
+      "grounding": {
+        "reference": "bob-coat/v019",
+        "root_y_correction": "Preserved exactly from selected delivery; other character foot geometry requires its own grounding review"
+      },
+      "license_notice": "License-KayKit.txt",
+      "verification": {
+        "destination_inspect": {
+          "file": "H:\\assets\\glb\\molroo\\animations\\kaykit-medium.glb",
+          "command": "inspect",
+          "exit": 0,
+          "issues": [],
+          "warnings": []
+        },
+        "preserved_keys": "Exact16 selected v019 target names, interpolation, timestamps and values, including root-Y grounding",
+        "binding": {
+          "clips": 16,
+          "poses": 512,
+          "sampled_vertex_comparisons": 786432,
+          "max_bone_matrix_error": 0,
+          "max_vertex_distance_m": 0,
+          "independent_instances": true
+        }
+      }
+    }
+  ]
+}
