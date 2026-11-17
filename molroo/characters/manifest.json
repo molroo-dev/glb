@@ -8,12 +8,12 @@
       "file": "bob-coat.glb",
       "preview": "bob-coat.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/bob-coat/v024/model.glb",
-      "source_version": "v024",
-      "bytes": 10063844,
-      "sha256": "6d3ff7714abd5f9056af5a027c7d1201fbcb1110cf97459a006dda521ad7b810",
-      "triangles": 180766,
-      "vertices": 107209,
+      "source_path": "assets/models/characters/full/bob-coat/v025/model.glb",
+      "source_version": "v025",
+      "bytes": 9843792,
+      "sha256": "b8fb11b47d4cbacc910bfadf0b70bfd32d4119d5b5f38fcc04f0b7ec4dde657f",
+      "triangles": 180764,
+      "vertices": 104620,
       "meshes": [
         "Body",
         "Head",
@@ -35,8 +35,8 @@
       "preview_clip": "Idle_A",
       "preview_time_seconds": 0.3,
       "preview_size_px": [
-        768,
-        768
+        512,
+        512
       ],
       "textures": {
         "embedded_base_color_maps": 2,
@@ -47,15 +47,9 @@
       },
       "required_extensions": [],
       "known_limitations": [
-        "20% coat-follow setting retains23 crossing poses in192 sampled lower-coat/pants walk ROI poses",
-        "Other deep-motion folds remain; no continuous or whole-body collision guarantee",
-        "Runtime performance and game-controller integration unmeasured",
-        "v023: face texture bleed and surface ripples remain",
-        "v023: full intersection comparison incomplete at max-pairs=5000000",
-        "PBR/native-engine performance not tested",
-        "v024: face texture bleed and surface ripples remain",
-        "v024: full intersection comparison incomplete at max-pairs=5000000",
-        "PBR/native-engine performance not tested"
+        "Inherited v002 head surface/texture shading artifacts; no new painting",
+        "Existing lower-coat motion crossings remain",
+        "No complete continuous collision, PBR/native-engine or performance test"
       ],
       "verification": {
         "destination_inspect": {
@@ -78,9 +72,10 @@
           "sampled_vertex_comparisons": 786432,
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
-          "independent_instances": true
+          "independent_instances": true,
+          "evidence": "handmade-assets/validation/molroo-characters-distribution/v010/binding-check.json; actual delivered v025 vs combined original"
         },
-        "inherited_geometry_review": "v024: Blender MCP neck correction; source final GLB views and 512-pose stretch check passed; neck ends embedded; no native-engine or continuous collision test"
+        "inherited_geometry_review": "v025: entire v002 Head transplanted; donor/final five-view comparison, four motion previews, neck endpoints and512-pose stretch checks passed; body and v024 neck geometry unchanged"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -112,7 +107,7 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "a62fdd0efa80195efbb1c0816ed09e7346048375d0529b32d006c847f8ef049b",
+      "source_delivery_sha256": "360c8188527c0894863dfa9c66c3a3399045235c2a4b87451718b1c0877964b2",
       "delivery_transform": "Animation clips moved to shared library; unused animation accessors/buffers removed; all mesh/rig/material/image data retained"
     },
     {
@@ -120,12 +115,12 @@
       "file": "boy.glb",
       "preview": "boy.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/boy/v003/distribution/boy.glb",
-      "source_version": "v003",
-      "bytes": 9544172,
-      "sha256": "a5557d782d74d61ddf0fb1cef337e2e5bac566f22a112780f03b2ecbf764ef46",
+      "source_path": "assets/models/characters/full/boy/v004/distribution/boy.glb",
+      "source_version": "v004",
+      "bytes": 8190832,
+      "sha256": "4013cf0cd028c22afaabd4c5d8d5743838124efda37f9f7692c18a4d684e677d",
       "triangles": 180760,
-      "vertices": 103872,
+      "vertices": 103891,
       "meshes": [
         "Body",
         "Head",
@@ -159,10 +154,10 @@
       },
       "required_extensions": [],
       "known_limitations": [
-        "Face/hair/skin texture bleed and surface irregularities remain; v003 crown texture locally retouched; fine bright boundary remains",
-        "Waving sample lifts the shoes about 0.03m; universal grounding is not guaranteed",
-        "Full body intersection comparison stopped at the 5,000,000-pair budget",
-        "No game controller, physics, FPS or target-runtime performance verification"
+        "Crown white patch repainted; subtle brown variation and other pre-existing texture artifacts remain",
+        "Sleeve radial thickness increased up to 20%; existing hands and rig retained",
+        "Prior grounding and full-intersection-scan limits remain; no continuous collision certification",
+        "No target-game/controller/physics/FPS test"
       ],
       "verification": {
         "destination_inspect": {
@@ -186,9 +181,10 @@
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true,
-          "evidence": "Actual destination vs previous delivery plus same shared library; v008/binding-check.json: 16 clips, 512 poses, 786432 vertices, zero errors"
+          "evidence": "Source distribution/binding-check.json; actual destination byte-identical, plus v009/binding-check.json"
         },
-        "grounding": "Source grounding.json: idle soles about 0.002m; Waving lifts about 0.030m; other clips vary"
+        "grounding": "Source grounding.json: idle soles about 0.002m; Waving lifts about 0.030m; other clips vary",
+        "geometry_review": "Canonical preferred combined mesh/UV/maps retained together; body sleeves radially enlarged; 512-pose stretch and topology checks passed; rest/default and 7 motion visual samples, PBR crown views reviewed"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -221,7 +217,7 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "a5557d782d74d61ddf0fb1cef337e2e5bac566f22a112780f03b2ecbf764ef46",
+      "source_delivery_sha256": "4013cf0cd028c22afaabd4c5d8d5743838124efda37f9f7692c18a4d684e677d",
       "delivery_transform": "No geometry transform; zero embedded animations; shared clips loaded separately"
     }
   ]
