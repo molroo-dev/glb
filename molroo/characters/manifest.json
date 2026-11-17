@@ -120,10 +120,10 @@
       "file": "boy.glb",
       "preview": "boy.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/boy/v002/distribution/boy.glb",
-      "source_version": "v002",
-      "bytes": 9546636,
-      "sha256": "c45d7035f5d463fec255155c10688ac04600a61fe354a33b96c365e3016c31f1",
+      "source_path": "assets/models/characters/full/boy/v003/distribution/boy.glb",
+      "source_version": "v003",
+      "bytes": 9544172,
+      "sha256": "a5557d782d74d61ddf0fb1cef337e2e5bac566f22a112780f03b2ecbf764ef46",
       "triangles": 180760,
       "vertices": 103872,
       "meshes": [
@@ -159,7 +159,7 @@
       },
       "required_extensions": [],
       "known_limitations": [
-        "Face/hair/skin texture bleed and surface irregularities remain; maps were not manually edited",
+        "Face/hair/skin texture bleed and surface irregularities remain; v003 crown texture locally retouched; fine bright boundary remains",
         "Waving sample lifts the shoes about 0.03m; universal grounding is not guaranteed",
         "Full body intersection comparison stopped at the 5,000,000-pair budget",
         "No game controller, physics, FPS or target-runtime performance verification"
@@ -186,7 +186,7 @@
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true,
-          "evidence": "source distribution binding-check.json; delivered boy.glb is byte-identical to that tested file"
+          "evidence": "Actual destination vs previous delivery plus same shared library; v008/binding-check.json: 16 clips, 512 poses, 786432 vertices, zero errors"
         },
         "grounding": "Source grounding.json: idle soles about 0.002m; Waving lifts about 0.030m; other clips vary"
       },
@@ -221,7 +221,7 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "c45d7035f5d463fec255155c10688ac04600a61fe354a33b96c365e3016c31f1",
+      "source_delivery_sha256": "a5557d782d74d61ddf0fb1cef337e2e5bac566f22a112780f03b2ecbf764ef46",
       "delivery_transform": "No geometry transform; zero embedded animations; shared clips loaded separately"
     }
   ]

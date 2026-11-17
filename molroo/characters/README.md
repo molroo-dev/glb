@@ -50,7 +50,9 @@ V023 limits: face texture bleed and small surface ripples remain. Full intersect
 
 ![Boy with shared Idle_A](boy.png)
 
-- Source: `handmade-assets/assets/models/characters/full/boy/v002/`. The delivered GLB is the source distribution artifact byte-for-byte: **9,546,636 bytes**, 180,760 triangles, 103,872 vertices, three meshes (Body/Head/Neck), KayKit Rig_Medium with21 joints, and two embedded1024x1024 base-color maps. Metres,+Y up,+Z forward; bind height about2.129m.
+- Source: `handmade-assets/assets/models/characters/full/boy/v003/`. The delivered GLB is the source distribution artifact byte-for-byte: **9,544,172 bytes**, 180,760 triangles, 103,872 vertices, three meshes (Body/Head/Neck), KayKit Rig_Medium with21 joints, and two embedded1024x1024 base-color maps. Metres,+Y up,+Z forward; bind height about2.129m.
 - **Zero embedded clips.** Load `../animations/kaykit-medium.glb` and bind its16 original-name clips to a cloned character skeleton. The source distribution binding check sampled512 poses and786,432 vertex comparisons against the combined boy model; maximum bone-matrix and vertex error were both0. Destination inspect and texture-inspect also passed. The exact delivery SHA is recorded in `manifest.json`.
 - Idle shoe height is about2mm; the sampled Waving clip raises the shoes about30mm. Hair/skin texture bleed and surface artifacts remain. The full body intersection scan reached its5,000,000-pair cap. Game controls, physics, runtime FPS and performance were not measured.
-- Editable sources, detailed image comparisons and the earlier failed intersection scan are in the handmade-assets v002 source record. The local addition record is `handmade-assets/validation/molroo-characters-distribution/v006/`.
+- Editable sources, detailed image comparisons and the earlier failed intersection scan are in the handmade-assets v003 source record. The local addition record is `handmade-assets/validation/molroo-characters-distribution/v008/`.
+
+V003 replaces the crown pale texture patch with sampled brown. The old GLB/preview/manifest/README are archived in handmade-assets/validation/molroo-characters-distribution/v008/previous/. Fine bright boundaries remain. Preview: Workbench flat texture, Idle_A at0.3s,768px; not PBR.
