@@ -8,10 +8,10 @@
       "file": "bob-coat.glb",
       "preview": "bob-coat.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/bob-coat/v026/model.glb",
-      "source_version": "v026",
+      "source_path": "assets/models/characters/full/bob-coat/v028/model.glb",
+      "source_version": "v028",
       "bytes": 9843792,
-      "sha256": "4571ee93fe5098089c5e38f9ea5f15bb0bb6e2ed8c203125042a5963fc04302c",
+      "sha256": "65d5f2144ca400af58d98f3e8279a84e3384ce1212a525f1947eb347d6e6fe78",
       "triangles": 180764,
       "vertices": 104620,
       "meshes": [
@@ -73,9 +73,9 @@
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true,
-          "evidence": "handmade-assets/validation/molroo-characters-distribution/v012/binding-check.json; actual delivered v026 vs combined original"
+          "evidence": "handmade-assets/validation/molroo-characters-distribution/v014/binding-check.json; actual delivered v028 vs combined original"
         },
-        "inherited_geometry_review": "v026: head translated backward0.14m, neck smoothly refitted; same-camera four-view/four-motion comparison, end-cap embedding and128-pose stretch checks passed; rig/materials/textures unchanged"
+        "inherited_geometry_review": "v028: head only translated forward0.08m from v027; straight neck unchanged; four-view/four-motion review, endpoint embedding and128-pose stretch checks passed"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -107,7 +107,7 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "353c3a8a046c4a053d065444a20926fa4e766ead4c313a3bfc3da6941bdcc8e6",
+      "source_delivery_sha256": "43d0af6310fd9405276bed3bb2a4486c188585e7f95e475bae8d886cee1df671",
       "delivery_transform": "Animation clips moved to shared library; unused animation accessors/buffers removed; all mesh/rig/material/image data retained"
     },
     {

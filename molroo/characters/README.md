@@ -13,17 +13,17 @@ Character meshes, embedded textures and rigs. **Animations are loaded separately
 
 - Uncompressed GLB, **9,843,792 bytes**, two embedded1024x1024 base-color maps. No external textures or compression decoder required.
 - **Zero embedded clips.** Load the shared library once; bind its clips by original node name to each character instance. See the [loading example](../animations/README.md#load-once-reuse-per-character).
-- Body/Head/Neck:180,764 triangles,104,620 vertices. In v026 the approved v025 Head moved backward0.14m and the upper neck smoothly followed; collar base, face shape, body, textures, rig and shared motions preserved.
+- Body/Head/Neck:180,764 triangles,104,620 vertices. In v028 only the Head moved forward0.08m from v027 to restore the head balance. The straight v027 neck, head shape, collar, body, textures, rig and shared motions are unchanged.
 - Metres,+Y up,+Z forward, original origin/bind transforms; bind height approximately2.129m.
 - KayKit Rig_Medium,21 skin joints and original `handslot.l/r` sockets. This is not the older FD2 maker-v2 rig. No separate animator IK controls or facial morphs.
 - The512x512 preview shows Idle_A at0.3s. A loader that opens only the character file shows its default/bind pose until an external clip plays.
 
 ## Verification and limits
 
-Source: `handmade-assets/assets/models/characters/full/bob-coat/v026/model.glb`. The combined original and previous delivery are preserved. Mesh positions/normals/UVs/indices/weights/materials/image bytes, inverse binds and node hierarchy are unchanged; unused animation accessors/buffers were removed. Current SHA-256:
+Source: `handmade-assets/assets/models/characters/full/bob-coat/v028/model.glb`. The combined original and previous delivery are preserved. Mesh positions/normals/UVs/indices/weights/materials/image bytes, inverse binds and node hierarchy are unchanged; unused animation accessors/buffers were removed. Current SHA-256:
 
 ```text
-4571ee93fe5098089c5e38f9ea5f15bb0bb6e2ed8c203125042a5963fc04302c
+65d5f2144ca400af58d98f3e8279a84e3384ce1212a525f1947eb347d6e6fe78
 ```
 
 Actual destination inspect/texture-inspect: exit0, issues/warnings empty. Separately loaded shared clips matched the former combined file at16 clips x32=512 poses: maximum joint-matrix error0 and sampled vertex distance0 (786,432 comparisons). Two skeleton-cloned instances shared clips while keeping independent skeleton state.
@@ -32,7 +32,7 @@ Source static geometry/visual/neck-connection checks remain applicable. The20% c
 
 The shared root-Y grounding correction is preserved from bob-coat v019. Other characters need matching rest transforms/proportions and their own sole/grounding review; sharing clips does not retarget arbitrary rigs or add foot IK.
 
-Editable Blender and the combined original remain in handmade-assets; v026 reuses the existing1024 donor atlas without new painting or resizing. Current separation record: `handmade-assets/validation/molroo-characters-distribution/v012/`; v001 records the earlier combined delivery. App code and remote hosting were not changed.
+Editable Blender and the combined original remain in handmade-assets; v028 reuses the existing1024 donor atlas without new painting or resizing. Current separation record: `handmade-assets/validation/molroo-characters-distribution/v014/`; v001 records the earlier combined delivery. App code and remote hosting were not changed.
 
 ## Sources and notices
 
@@ -43,7 +43,7 @@ References were user-supplied/generated; shape/paint used Hunyuan3D Mini/Paint w
 
 The component CC0 notice is not a blanket license for the entire character. Staging/separation does not establish additional reference-image rights.
 
-V026 inherited limits: original v002 head texture shading and surface artifacts are inherited. Full intersection comparison exhausted the 5,000,000-pair budget; this is not complete collision validation. No new PBR/native-engine test.
+V028 inherited limits: original v002 head texture shading and surface artifacts are inherited. Full intersection comparison exhausted the 5,000,000-pair budget; this is not complete collision validation. No new PBR/native-engine test.
 
 
 ## Boy
