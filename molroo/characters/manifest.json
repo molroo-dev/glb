@@ -1,7 +1,7 @@
 {
   "namespace": "molroo/characters",
   "format": "GLB",
-  "count": 2,
+  "count": 3,
   "assets": [
     {
       "id": "bob-coat",
@@ -220,6 +220,211 @@
       },
       "source_delivery_sha256": "24c5ec8e5f29f6fc4d15697f0dee2241424bc03bb86559bae705ada0cbede479",
       "delivery_transform": "No geometry transform; zero embedded animations; shared clips loaded separately"
+    },
+    {
+      "id": "flower-hat-girl",
+      "file": "flower-hat-girl.glb",
+      "preview": "flower-hat-girl.png",
+      "source_project": "handmade-assets",
+      "source_path": "assets/models/characters/full/flower-hat-girl/v001/model.glb",
+      "source_version": "v001",
+      "bytes": 8585596,
+      "sha256": "8548c51b420d0db7e0743a28c1e6312f3e224050d7cf6ef2c76e8cb15c06ad66",
+      "triangles": 179440,
+      "vertices": 107889,
+      "meshes": [
+        "geometry_0",
+        "geometry_0@head_0",
+        "Neck"
+      ],
+      "units": "metres",
+      "up_axis": "+Y",
+      "forward_axis": "+Z",
+      "bind_height_m": 2.234061,
+      "rig": {
+        "family": "KayKit Rig_Medium",
+        "skin_joints": 21,
+        "sockets": [
+          "handslot.l",
+          "handslot.r"
+        ]
+      },
+      "animations": [],
+      "embedded_animation_count": 0,
+      "preview_clip": "Idle_A",
+      "preview_time_seconds": 0.3,
+      "preview_size_px": [
+        512,
+        512
+      ],
+      "textures": {
+        "embedded_base_color_maps": 2,
+        "size_px": [
+          1024,
+          1024
+        ]
+      },
+      "required_extensions": [],
+      "animation_library": {
+        "id": "kaykit-medium",
+        "file": "../animations/kaykit-medium.glb",
+        "sha256": "7e2b5b4d881ffd9e089b66757c2c064006d1038bd6aefca6a93eab7440536ba1",
+        "binding": "original_node_name",
+        "clips": [
+          "Idle_A",
+          "Idle_B",
+          "Walking_A",
+          "Walking_B",
+          "Walking_Backwards",
+          "Running_A",
+          "Running_B",
+          "Cheering",
+          "Crouching",
+          "Waving",
+          "Jump_Full_Short",
+          "Jump_Full_Long",
+          "Jump_Start",
+          "Jump_Idle",
+          "Jump_Land",
+          "Melee_Unarmed_Attack_Punch_A"
+        ],
+        "grounding_reference": "bob-coat/v019"
+      },
+      "verification": {
+        "prepared_inspect": {
+          "exit": 0,
+          "issues": [],
+          "warnings": []
+        },
+        "prepared_texture_inspect": {
+          "exit": 0,
+          "issues": [],
+          "warnings": []
+        },
+        "shared_animation_binding": {
+          "clips": 16,
+          "poses": 512,
+          "sampled_vertex_comparisons": 786432,
+          "max_bone_matrix_error": 0,
+          "max_vertex_distance_m": 0,
+          "independent_instances": true,
+          "rigid_head_included": true,
+          "evidence": "handmade-assets/validation/molroo-characters-distribution/v015/binding-delivered.json; actual destination loaded separately"
+        },
+        "animation_deformation": {
+          "status": "fails_3x_stretch_diagnostic",
+          "poses": 384,
+          "issues": [
+            "geometry_0: edge stretch 6.797 exceeds 3 at Running_B time 0.7304347934930221 (bones upperlegl, hips, spine, lowerlegl, upperlegr)"
+          ],
+          "basic_motion_issues": [
+            "geometry_0: edge stretch 3.786 exceeds 3 at Walking_B time 0.9275362802588422 (bones upperlegl, hips, spine, lowerlegl, upperlegr)"
+          ],
+          "neck_max_stretch": 1.2947375358820619,
+          "note": "Name-compatible16clips are not a claim of acceptable deformation across all motions.",
+          "default_motion_issues": [
+            "geometry_0: edge stretch 3.726 exceeds 3 at Walking_A time 0.9275362802588422 (bones upperlegl, hips, spine, lowerlegl, upperlegr)"
+          ]
+        },
+        "grounding": {
+          "foot_roi_bind_y_below_m": 0.2,
+          "samples_per_clip": 32,
+          "lower_foot_ranges_m": {
+            "Idle_A": [
+              0.0015346557662403023,
+              0.0017453579995568278
+            ],
+            "Idle_B": [
+              0.0010020466765367465,
+              0.0017453579995568077
+            ],
+            "Walking_A": [
+              -0.02371057532922244,
+              0.020015344158501022
+            ],
+            "Walking_B": [
+              -0.024609913027715702,
+              0.030348001025352758
+            ],
+            "Walking_Backwards": [
+              -0.001248100733376445,
+              0.031799911018367225
+            ],
+            "Running_A": [
+              0.0008896274834506814,
+              0.08881279829663896
+            ],
+            "Running_B": [
+              -0.024703248557228163,
+              0.05292991462660984
+            ],
+            "Cheering": [
+              0.0010167582280858917,
+              0.001750464876217816
+            ],
+            "Crouching": [
+              0.0006875009599804187,
+              0.017678813853345347
+            ],
+            "Waving": [
+              0.05537320902006271,
+              0.05552995537281651
+            ],
+            "Jump_Full_Short": [
+              0.0007924716769140017,
+              0.033855671281102895
+            ],
+            "Jump_Full_Long": [
+              -0.00040362284512704405,
+              0.033855671281102895
+            ],
+            "Jump_Start": [
+              0.0008138361699999127,
+              0.033855986739726285
+            ],
+            "Jump_Idle": [
+              -0.0003996873491981523,
+              0.03385615040039325
+            ],
+            "Jump_Land": [
+              0.0007385139220540929,
+              0.03385615327871497
+            ],
+            "Melee_Unarmed_Attack_Punch_A": [
+              -0.016550757110833883,
+              0.0018967312417097135
+            ]
+          },
+          "note": "Negative values are below ground; running/jump positive heights may be flight. Waving has about55mm uncorrected lift."
+        },
+        "destination_inspect": {
+          "file": "H:\\assets\\glb\\molroo\\characters\\flower-hat-girl.glb",
+          "exit": 0,
+          "issues": [],
+          "warnings": []
+        },
+        "destination_texture_inspect": {
+          "file": "H:\\assets\\glb\\molroo\\characters\\flower-hat-girl.glb",
+          "exit": 0,
+          "issues": [],
+          "warnings": []
+        }
+      },
+      "known_limitations": [
+        "Walking_A crotch stretch3.726 and Walking_B3.786 at0.927536s, Running_B6.797 at0.730435s exceed3; full16clip deformation diagnostic fails",
+        "Existing deep-knee pants compression and garment crossings remain",
+        "Grounding is shared bob-coat reference: walking lows around-25mm and Waving soles around+55mm; no character-specific correction",
+        "Inherited hat/glasses/scarf/shoe texture and skin-tone differences remain",
+        "Neck is separately embedded geometry, not a welded body/head union",
+        "No continuous collision, target-game/controller/physics or FPS validation"
+      ],
+      "notices": [
+        "licenses/License-KayKit.txt",
+        "licenses/License-Hunyuan3D-2.0.txt",
+        "licenses/NOTICE-Hunyuan3D-2.0.txt"
+      ],
+      "source_delivery_sha256": "8548c51b420d0db7e0743a28c1e6312f3e224050d7cf6ef2c76e8cb15c06ad66",
+      "delivery_transform": "Byte-identical zero-clip source; user body paint, geometry, rig, weights and rigid head placement retained"
     }
   ]
 }

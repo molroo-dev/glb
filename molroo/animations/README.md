@@ -29,7 +29,7 @@ import { clone } from 'three/addons/utils/SkeletonUtils.js';
 const loader = new GLTFLoader();
 const [motions, character] = await Promise.all([
   loader.loadAsync('/molroo/animations/kaykit-medium.glb'), // load once
-  loader.loadAsync('/molroo/characters/bob-coat.glb'),
+  loader.loadAsync('/molroo/characters/bob-coat.glb'), // or /molroo/characters/flower-hat-girl.glb (see its motion limits)
 ]);
 const instance = clone(character.scene);
 scene.add(instance);
@@ -56,3 +56,6 @@ Actual destination inspect: exit0, issues/warnings empty. Separately loading bot
 Character9,843,792B + library614,908B =10,458,700B; former combined file10,454,904B. The3,796B one-character overhead is standalone metadata. Additional compatible characters can reuse the library rather than embedding the same key data.
 
 Original KayKit rig/animations: Kay Lousberg, [CC0 notice](License-KayKit.txt). Selected root-Y correction/source provenance: `handmade-assets/validation/molroo-characters-distribution/v002/`. The combined original remains there and in the source asset. This was local separation; no commit/push or consuming-app code change was performed.
+
+
+[Flower hat girl](../characters/README.md#flower-hat-girl) also binds these16 clips by name. Its Walking_A/Walking_B/Running_B deformation and character-specific grounding have known limits; see the character entry. The shared animation file and keys are unchanged.

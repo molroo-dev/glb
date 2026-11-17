@@ -6,6 +6,7 @@ Character meshes, embedded textures and rigs. **Animations are loaded separately
 | --- | --- | --- | --- |
 | Bob coat | [bob-coat.glb](bob-coat.glb) | [bob-coat.png](bob-coat.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 clips |
 | Boy | [boy.glb](boy.glb) | [boy.png](boy.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 clips |
+| Flower hat girl | [flower-hat-girl.glb](flower-hat-girl.glb) | [flower-hat-girl.png](flower-hat-girl.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 name-compatible clips; motion limits below |
 
 ![Bob coat with shared Idle_A](bob-coat.png)
 
@@ -56,3 +57,17 @@ V028 inherited limits: original v002 head texture shading and surface artifacts 
 - Shoulder comparison: all16 clips x9=144 ROI poses had no overlap-pair increase versus v004. Remaining sharp shoulder folds/overlaps are documented; this is not continuous collision safety. Before/after worst sampled poses were reviewed from front/rear.
 - Preview: actual final mesh,Idle_A at0.3s,768px Workbench studio texture. Fine brown color variation and earlier texture/grounding/intersection limits remain. Target-game/PBR controls/physics/FPS were not re-tested.
 - Previous delivery/preview/manifest/README: `handmade-assets/validation/molroo-characters-distribution/v011/previous/`. Current publication checks and hashes: `handmade-assets/validation/molroo-characters-distribution/v011/` and this manifest. Bob coat and shared animations unchanged.
+
+
+## Flower hat girl
+
+![Flower hat girl shared Idle_A](flower-hat-girl.png)
+
+- Source: `handmade-assets/assets/models/characters/full/flower-hat-girl/v001/`. User-improved body paint and existing hat/glasses head retained; fitted chest/head neck connector. Original source and editable Blender remain there.
+- `flower-hat-girl.glb`: **8,585,596 bytes,179,440 triangles,107,889 vertices**,3 meshes,21 skin joints,two embedded1024px maps,zero embedded clips. Metres,+Y up,+Z forward,bind height about2.234061m. No external textures or compression decoder. Delivery is byte-identical to the approved assembled source.
+- Load `../animations/kaykit-medium.glb` once and bind tracks by original node names; use the existing loading example with the new character URL. The512px Cycles preview is actual `Idle_A` at0.3s. Head is a rigid child of the head joint; Body and Neck are skinned.
+- Separate library vs source recombined with the same library:16 clips x32=512 poses,786,432 sampled vertex comparisons,joint/vertex error0; independent SkeletonUtils clones verified. This checks binding, not authored animation fidelity or collision safety.
+- **Motion deformation is not fully accepted:** the16-clip/384-pose3x diagnostic fails at `Running_B`0.730435s,crotch stretch6.797x. The basic-motion subset also fails at `Walking_B`0.927536s,3.786x; the Idle_A/Walking_A subset fails at Walking_A0.927536s,3.726x. Neck maximum is1.295x. Existing pants/garment compression remains. Do not interpret16 compatible clip names as a deformation-quality pass.
+- Grounding review:32 times per clip on original shoe/cuff ROI vertices. Idle_A soles about+1.5~1.7mm,Walking_A minimum about-23.7mm,Walking_B minimum about-24.6mm,Waving about+55.4mm. Running/jump positive ranges may be flight. Shared keys and source rig/weights were retained; no character-specific grounding correction was added.
+- Current destination structural/map checks and binding evidence: `handmade-assets/validation/molroo-characters-distribution/v015/`. Original body/head map bytes and all mesh/rig data preserved. Remaining face/hand tone differences, hat/glasses/scarf/shoe paint artifacts and separately embedded neck ends are inherited/documented. No complete continuous collision,target-game/controller/physics or runtime performance test.
+- Local publication only; existing Bob coat/Boy assets and animation library GLB unchanged. Common licenses/notices above apply; original user reference provenance remains with source records.
