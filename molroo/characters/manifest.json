@@ -8,10 +8,10 @@
       "file": "bob-coat.glb",
       "preview": "bob-coat.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/bob-coat/v023/model.glb",
-      "source_version": "v023",
+      "source_path": "assets/models/characters/full/bob-coat/v024/model.glb",
+      "source_version": "v024",
       "bytes": 10063844,
-      "sha256": "68fd8b016c40778347d4022936ac3d39499afd2ba474bc5ed9921c1351fe8462",
+      "sha256": "6d3ff7714abd5f9056af5a027c7d1201fbcb1110cf97459a006dda521ad7b810",
       "triangles": 180766,
       "vertices": 107209,
       "meshes": [
@@ -52,6 +52,9 @@
         "Runtime performance and game-controller integration unmeasured",
         "v023: face texture bleed and surface ripples remain",
         "v023: full intersection comparison incomplete at max-pairs=5000000",
+        "PBR/native-engine performance not tested",
+        "v024: face texture bleed and surface ripples remain",
+        "v024: full intersection comparison incomplete at max-pairs=5000000",
         "PBR/native-engine performance not tested"
       ],
       "verification": {
@@ -77,7 +80,7 @@
           "max_vertex_distance_m": 0,
           "independent_instances": true
         },
-        "inherited_geometry_review": "v023 source: new reference head and upper neck extension; 512-pose stretch checks passed; Workbench views reviewed; full intersection comparison incomplete"
+        "inherited_geometry_review": "v024: Blender MCP neck correction; source final GLB views and 512-pose stretch check passed; neck ends embedded; no native-engine or continuous collision test"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -109,7 +112,7 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "83719d129af3da560a52b5d12f18830fb01f0406646435f1ebb3898be1e54527",
+      "source_delivery_sha256": "a62fdd0efa80195efbb1c0816ed09e7346048375d0529b32d006c847f8ef049b",
       "delivery_transform": "Animation clips moved to shared library; unused animation accessors/buffers removed; all mesh/rig/material/image data retained"
     },
     {

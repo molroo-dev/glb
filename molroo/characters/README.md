@@ -13,17 +13,17 @@ Character meshes, embedded textures and rigs. **Animations are loaded separately
 
 - Uncompressed GLB, **10,063,844 bytes**, two embedded1024x1024 base-color maps. No external textures or compression decoder required.
 - **Zero embedded clips.** Load the shared library once; bind its clips by original node name to each character instance. See the [loading example](../animations/README.md#load-once-reuse-per-character).
-- Body/Head/Neck:180,766 triangles,107,209 vertices. Head replaced from the supplied reference in v023; upper neck extended by 0.04m for contact. Body, rig and shared motions preserved.
+- Body/Head/Neck:180,766 triangles,107,209 vertices. Head from v023 preserved; neck locally reshaped via Blender MCP in v024 to connect beneath the jaw. Body, rig, textures and shared motions preserved.
 - Metres,+Y up,+Z forward, original origin/bind transforms; bind height approximately2.129m.
 - KayKit Rig_Medium,21 skin joints and original `handslot.l/r` sockets. This is not the older FD2 maker-v2 rig. No separate animator IK controls or facial morphs.
-- The768x768 RGBA preview shows Idle_A at0.3s. A loader that opens only the character file shows its default/bind pose until an external clip plays.
+- The512x512 preview shows Idle_A at0.3s. A loader that opens only the character file shows its default/bind pose until an external clip plays.
 
 ## Verification and limits
 
-Source: `handmade-assets/assets/models/characters/full/bob-coat/v023/model.glb`. The combined original and previous delivery are preserved. Mesh positions/normals/UVs/indices/weights/materials/image bytes, inverse binds and node hierarchy are unchanged; unused animation accessors/buffers were removed. Current SHA-256:
+Source: `handmade-assets/assets/models/characters/full/bob-coat/v024/model.glb`. The combined original and previous delivery are preserved. Mesh positions/normals/UVs/indices/weights/materials/image bytes, inverse binds and node hierarchy are unchanged; unused animation accessors/buffers were removed. Current SHA-256:
 
 ```text
-68fd8b016c40778347d4022936ac3d39499afd2ba474bc5ed9921c1351fe8462
+6d3ff7714abd5f9056af5a027c7d1201fbcb1110cf97459a006dda521ad7b810
 ```
 
 Actual destination inspect/texture-inspect: exit0, issues/warnings empty. Separately loaded shared clips matched the former combined file at16 clips x32=512 poses: maximum joint-matrix error0 and sampled vertex distance0 (786,432 comparisons). Two skeleton-cloned instances shared clips while keeping independent skeleton state.
@@ -32,7 +32,7 @@ Source static geometry/visual/neck-connection checks remain applicable. The20% c
 
 The shared root-Y grounding correction is preserved from bob-coat v019. Other characters need matching rest transforms/proportions and their own sole/grounding review; sharing clips does not retarget arbitrary rigs or add foot IK.
 
-Editable Blender,2048 masters and the combined original remain in handmade-assets. Current separation record: `handmade-assets/validation/molroo-characters-distribution/v005/`; v001 records the earlier combined delivery. App code and remote hosting were not changed.
+Editable Blender,2048 masters and the combined original remain in handmade-assets. Current separation record: `handmade-assets/validation/molroo-characters-distribution/v007/`; v001 records the earlier combined delivery. App code and remote hosting were not changed.
 
 ## Sources and notices
 
