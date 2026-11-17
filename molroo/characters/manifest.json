@@ -115,10 +115,10 @@
       "file": "boy.glb",
       "preview": "boy.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/boy/v004/distribution/boy.glb",
-      "source_version": "v004",
+      "source_path": "assets/models/characters/full/boy/v005/distribution/boy.glb",
+      "source_version": "v005",
       "bytes": 8190832,
-      "sha256": "4013cf0cd028c22afaabd4c5d8d5743838124efda37f9f7692c18a4d684e677d",
+      "sha256": "24c5ec8e5f29f6fc4d15697f0dee2241424bc03bb86559bae705ada0cbede479",
       "triangles": 180760,
       "vertices": 103891,
       "meshes": [
@@ -154,9 +154,10 @@
       },
       "required_extensions": [],
       "known_limitations": [
-        "Crown white patch repainted; subtle brown variation and other pre-existing texture artifacts remain",
-        "Sleeve radial thickness increased up to 20%; existing hands and rig retained",
-        "Prior grounding and full-intersection-scan limits remain; no continuous collision certification",
+        "Prior crown correction and sleeve20% volume retained; extra local shoulder15% gain and chest/upperarm weight transition widened",
+        "Sharp shoulder folds and sampled local overlaps remain; not a collision-free model",
+        "16 clips x9 shoulder ROI samples had no overlap-pair increase over v004; this is not continuous or whole-body collision coverage",
+        "Existing texture variation and grounding/full-intersection-scan limits remain",
         "No target-game/controller/physics/FPS test"
       ],
       "verification": {
@@ -181,10 +182,10 @@
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true,
-          "evidence": "Source distribution/binding-check.json; actual destination byte-identical, plus v009/binding-check.json"
+          "evidence": "Source distribution/binding-check.json; actual destination byte-identical, plus v011/binding-check.json"
         },
         "grounding": "Source grounding.json: idle soles about 0.002m; Waving lifts about 0.030m; other clips vary",
-        "geometry_review": "Canonical preferred combined mesh/UV/maps retained together; body sleeves radially enlarged; 512-pose stretch and topology checks passed; rest/default and 7 motion visual samples, PBR crown views reviewed"
+        "geometry_review": "v005 local shoulder volume and chest/upperarm weights; unchanged head/maps/rig/clips; 512-pose stretch passed; 144 shoulder ROI poses showed no overlap-pair increase; all16 worst sampled clips reviewed front/rear; folds and overlaps remain"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -217,7 +218,7 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "4013cf0cd028c22afaabd4c5d8d5743838124efda37f9f7692c18a4d684e677d",
+      "source_delivery_sha256": "24c5ec8e5f29f6fc4d15697f0dee2241424bc03bb86559bae705ada0cbede479",
       "delivery_transform": "No geometry transform; zero embedded animations; shared clips loaded separately"
     }
   ]

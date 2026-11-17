@@ -50,8 +50,9 @@ V025 limits: original v002 head texture shading and surface artifacts are inheri
 
 ![Boy Idle_A](boy.png)
 
-- Source: `handmade-assets/assets/models/characters/full/boy/v004/`. Crown white texture patch corrected; sleeves widened up to20% with smooth shoulder/cuff transitions; hands retained.
+- Source: `handmade-assets/assets/models/characters/full/boy/v005/`. Prior crown correction and sleeve20% volume retained. Added local shoulder15% volume and widened chest/upperarm weight transition; hands retained. Adopted for fuller arms after the user's follow-up request.
 - `boy.glb`: 8,190,832 bytes,180,760 triangles,103,891 vertices,three meshes,21 KayKit Medium joints,two embedded1024px base-color maps,zero embedded clips. Metres,+Y up,+Z forward.
 - Load the16 clips from `../animations/kaykit-medium.glb` by original node names. Combined vs separate library:512 poses,786,432 sampled vertex comparisons,bone/vertex error0; skeleton clones independent. All16 clips also passed32-sample edge-stretch checks with limit3. This does not certify continuous collision safety.
-- Preview: actual final mesh,Idle_A at0.3s,768px Workbench flat texture. Separate Cycles PBR crown views were reviewed in handmade-assets. Fine brown color variation and earlier texture/grounding/intersection limits remain. Target-game controls/physics/FPS unmeasured.
-- Previous delivery/preview/manifest/README: `handmade-assets/validation/molroo-characters-distribution/v009/previous/`. Current publication checks and hashes: `handmade-assets/validation/molroo-characters-distribution/v009/` and this manifest. Bob coat and shared animations unchanged.
+- Shoulder comparison: all16 clips x9=144 ROI poses had no overlap-pair increase versus v004. Remaining sharp shoulder folds/overlaps are documented; this is not continuous collision safety. Before/after worst sampled poses were reviewed from front/rear.
+- Preview: actual final mesh,Idle_A at0.3s,768px Workbench studio texture. Fine brown color variation and earlier texture/grounding/intersection limits remain. Target-game/PBR controls/physics/FPS were not re-tested.
+- Previous delivery/preview/manifest/README: `handmade-assets/validation/molroo-characters-distribution/v011/previous/`. Current publication checks and hashes: `handmade-assets/validation/molroo-characters-distribution/v011/` and this manifest. Bob coat and shared animations unchanged.
