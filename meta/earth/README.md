@@ -5,7 +5,8 @@
 | 파일 | 용도 | 크기 |
 |---|---|---:|
 | `signpost.glb` | 나라 푯말: 기둥 두 개 x ±0.93 사이에 널판 세 장(가운데 y 2.15, 앞뒷면 z ±0.0225), 위아래 테두리, 작은 맞배 지붕(용마루 3.0 m). 글씨는 meta 쪽에서 판 앞뒷면에 얹는다 | 66 KB |
+| `boat.glb` | 바다 위 1인용 작은 보트: 길이 2.4 m·폭 1.1 m, 뱃머리 +z, 원점은 수면. 옆면이 벌어진 빨간 선체, 바닥판(윗면 y 0.165)에 앉고 뒤 가로대·앞 가로대·앞갑판, 양옆에 걸친 노 한 쌍, 황동 노걸이 | 192 KB |
 
 ## 원본·재현
 
-meta 저장소 `node scripts/earth.mjs signpost` → 3d-maker `maker prop`. 레시피는 meta `assets/earth-signpost.prop.json`. 압축하지 않았다. `issues: []`, 경고는 `not on the ground`(기둥이 비탈에서 뜨지 않게 0.12 m 묻힌 것이라 의도된 것) 하나.
+meta 저장소 `node scripts/earth.mjs <signpost|boat>` → 3d-maker `maker prop`. 레시피는 meta `assets/earth-<이름>.prop.json`. 압축하지 않았다. 모두 `issues: []`. 경고는 `not on the ground` 하나씩: 푯말은 기둥이 비탈에서 뜨지 않게 0.12 m 묻은 것이고, 보트는 용골이 수면 아래 0.15 m까지 잠긴 것이라 둘 다 의도된 것.
