@@ -4,13 +4,13 @@ Load one animation GLB and reuse its clips across compatible characters. Metadat
 
 | Library | Rig | Clips | Bytes |
 | --- | --- | ---: | ---: |
-| [kaykit-medium.glb](kaykit-medium.glb) | KayKit Rig_Medium |16|614,908|
+| [kaykit-medium.glb](kaykit-medium.glb) | KayKit Rig_Medium |17|644,576|
 
 The file contains only rest-node hierarchy and animations, with no mesh, skin, material or texture payload. Bind `animations` to the character scene; do not add/animate the library scene. [Bob coat](../characters/bob-coat.glb) contains the matching21-joint rig and no embedded clips.
 
 ```text
 Idle_A, Idle_B
-Walking_A, Walking_B, Walking_Backwards
+Walking_A, Walking_B, Walking_C, Walking_Backwards
 Running_A, Running_B
 Cheering, Crouching, Waving
 Jump_Full_Short, Jump_Full_Long, Jump_Start, Jump_Idle, Jump_Land
@@ -43,19 +43,19 @@ For another character instance, use its own skeleton clone and mixer while reusi
 
 ## Source, grounding and verification
 
-This is the16-clip selection from bob-coat v019, not the full132-clip KayKit library. Channel targets, interpolation, timestamps and values are byte-exact, including the selected root-Y grounding correction and flight phases. Grounding reference: **bob-coat v019**. Other sole geometry needs grounding review; no universal foot IK/cloth simulation is included.
+The library combines 16 clips from bob-coat v019 with Walking_C from KayKit Character Animations 1.1 (Rig_Medium_MovementBasic.glb, CC0). Channel targets, interpolation, timestamps and values are byte-exact, including the selected root-Y grounding correction and flight phases. Grounding reference: **bob-coat v019**. Other sole geometry needs grounding review; no universal foot IK/cloth simulation is included.
 
 SHA-256:
 
 ```text
-7e2b5b4d881ffd9e089b66757c2c064006d1038bd6aefca6a93eab7440536ba1
+b52a3ecb47c850548b980f8902358cf3fee284f580440b943b051a159a3b7767
 ```
 
-Actual destination inspect: exit0, issues/warnings empty. Separately loading both files and playing them on Bob coat matched the former combined delivery at16x32=512 poses: joint-matrix error0, sampled vertex distance0 (786,432 comparisons). Independent skeleton clones shared this library successfully. Native engine graphics, game controllers and performance were not retested. Existing garment crossings remain.
+Original 16-clip delivery verification. Destination inspect: exit0, issues/warnings empty. Separately loading both files and playing them on Bob coat matched the former combined delivery at16x32=512 poses: joint-matrix error0, sampled vertex distance0 (786,432 comparisons). Independent skeleton clones shared this library successfully. Native engine graphics, game controllers and performance were not retested. Existing garment crossings remain.
 
-Character9,843,792B + library614,908B =10,458,700B; former combined file10,454,904B. The3,796B one-character overhead is standalone metadata. Additional compatible characters can reuse the library rather than embedding the same key data.
+Original sizes: character9,843,792B + library614,908B =10,458,700B; former combined file10,454,904B. The3,796B one-character overhead is standalone metadata. Additional compatible characters can reuse the library rather than embedding the same key data.
 
 Original KayKit rig/animations: Kay Lousberg, [CC0 notice](License-KayKit.txt). Selected root-Y correction/source provenance: `handmade-assets/validation/molroo-characters-distribution/v002/`. The combined original remains there and in the source asset. This was local separation; no commit/push or consuming-app code change was performed.
 
 
-[Flower hat girl](../characters/README.md#flower-hat-girl) also binds these16 clips by name. Its Walking_A/Walking_B/Running_B deformation and character-specific grounding have known limits; see the character entry. The shared animation file and keys are unchanged.
+[Flower hat girl](../characters/README.md#flower-hat-girl) also binds the original 16 clips by name. Its Walking_A/Walking_B/Running_B deformation and character-specific grounding have known limits; see the character entry. The original 16 clips retain their key data.

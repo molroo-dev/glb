@@ -6,8 +6,8 @@
     {
       "id": "kaykit-medium",
       "file": "kaykit-medium.glb",
-      "bytes": 614908,
-      "sha256": "7e2b5b4d881ffd9e089b66757c2c064006d1038bd6aefca6a93eab7440536ba1",
+      "bytes": 644576,
+      "sha256": "b52a3ecb47c850548b980f8902358cf3fee284f580440b943b051a159a3b7767",
       "rig_family": "KayKit Rig_Medium",
       "joint_names": [
         "root",
@@ -38,6 +38,7 @@
         "Idle_B",
         "Walking_A",
         "Walking_B",
+        "Walking_C",
         "Walking_Backwards",
         "Running_A",
         "Running_B",
@@ -51,7 +52,7 @@
         "Jump_Land",
         "Melee_Unarmed_Attack_Punch_A"
       ],
-      "clip_count": 16,
+      "clip_count": 17,
       "meshes": 0,
       "textures": 0,
       "source_project": "handmade-assets",
@@ -77,8 +78,10 @@
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true
-        }
-      }
+        },
+        "scope": "Original 16-clip delivery before adding Walking_C"
+      },
+      "walking_c_source": "KayKit Character Animations 1.1, Rig_Medium_MovementBasic.glb (CC0)"
     }
   ]
 }
