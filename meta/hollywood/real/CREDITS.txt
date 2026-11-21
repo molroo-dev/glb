@@ -1,0 +1,12 @@
+Generic passenger car pack — split into individual cars
+=========================================================
+
+Source model: "Generic passenger car pack" by Comrade1280
+https://sketchfab.com/3d-models/generic-passenger-car-pack-20f9af9b8a404d5cb022ac6fe87f21f5
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+Requires attribution: "Generic passenger car pack" by Comrade1280, CC BY 4.0.
+
+Split: 10 individual GLB files, each = 1 body (Body/Glass/Optics) + its 4 wheels.
+All are centred on XZ, sit on Y=0, length along Z, front facing +Z, real-world scale (m).
+
+Changes: simplified meshes and resized/recompressed embedded textures. See manifest.json for triangle counts.

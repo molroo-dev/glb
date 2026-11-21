@@ -1,0 +1,111 @@
+{
+  "source": {
+    "name": "Generic passenger car pack",
+    "author": "Comrade1280",
+    "uid": "20f9af9b8a404d5cb022ac6fe87f21f5",
+    "license": "CC BY 4.0",
+    "url": "https://sketchfab.com/3d-models/generic-passenger-car-pack-20f9af9b8a404d5cb022ac6fe87f21f5"
+  },
+  "files": {
+    "car_compact.glb": {
+      "tris": 5981,
+      "size": [
+        1.81,
+        3.66,
+        1.75
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_coupe.glb": {
+      "tris": 5000,
+      "size": [
+        4.73,
+        2.82,
+        1.77
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_hatchback.glb": {
+      "tris": 5678,
+      "size": [
+        1.96,
+        4.45,
+        1.86
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_minivan.glb": {
+      "tris": 6126,
+      "size": [
+        2.1,
+        5.19,
+        2.34
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_offroad.glb": {
+      "tris": 5422,
+      "size": [
+        2.21,
+        4.43,
+        2.17
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_pickup.glb": {
+      "tris": 5780,
+      "size": [
+        2.33,
+        5.83,
+        2.33
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_sedan.glb": {
+      "tris": 5886,
+      "size": [
+        2.18,
+        4.91,
+        1.86
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_sport.glb": {
+      "tris": 5320,
+      "size": [
+        1.99,
+        4.4,
+        1.52
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_suv.glb": {
+      "tris": 6593,
+      "size": [
+        2.33,
+        5.19,
+        2.37
+      ],
+      "materials": 4,
+      "textures": 5
+    },
+    "car_wagon.glb": {
+      "tris": 5782,
+      "size": [
+        2.19,
+        4.93,
+        1.9
+      ],
+      "materials": 4,
+      "textures": 5
+    }
+  }
+}
