@@ -10,8 +10,8 @@
 | `bench.glb` | 회벽 벤치 2.6 m, 좌면 0.45 m | 10 KB |
 | `boat-cruise.glb` | 유람 범선 | 43 KB |
 | `boat-fishing.glb` | 어선(뱃머리 +z, 수면 y 0) | 48 KB |
-| `bougainvillea.glb` | 담을 넘는 부겐빌레아(근경) | 2064 KB |
-| `bougainvillea-far.glb` | 같은 덩굴(원경용) | 800 KB |
+| `bougainvillea.glb` | 담을 넘는 부겐빌레아(근경) | 655 KB |
+| `bougainvillea-far.glb` | 같은 덩굴(원경용) | 191 KB |
 | `castle.glb` | 무너진 성벽 전망대(+z로 열림) | 128 KB |
 | `cave-house.glb` | 동굴집(근경): 볼트 방·별채·담 두른 테라스 | 316 KB |
 | `cave-low.glb` | 동굴집(원경용) | 63 KB |
@@ -40,7 +40,7 @@
 | `sunbed.glb` | 선베드(머리 −z) | 25 KB |
 | `table.glb` | 카페 탁자 | 22 KB |
 | `tall.glb` | 바깥 계단이 있는 2층집 | 92 KB |
-| `tree-vine.glb` | 나무형 부겐빌레아 | 593 KB |
+| `tree-vine.glb` | 나무형 부겐빌레아 | 672 KB |
 | `wildflowers.glb` | 노란 들꽃 | 58 KB |
 | `windmill.glb` | 풍차 몸체. 날개는 y 5.1 부근에 단다 | 58 KB |
 
@@ -48,4 +48,4 @@
 
 ## 원본·재현
 
-meta 저장소 `npm run santorini`(= `node scripts/santorini.mjs <이름>` → 3d-maker `maker prop`, castle·sunbed·prickly-pear는 `maker decimate`). 레시피는 meta `assets/santorini-*.prop.json`. 그다음 gltfpack 1.3.0 `-cc -vp 16 -vn 10 -kn -km -ke`로 Meshopt 압축했다(`EXT_meshopt_compression` 필요). 모두 `issues: []`. 남은 경고는 묻히는 기초·수면 아래로 인한 `min y`, 쓰지 않는 공용 팔레트 색, 서로 닿게 겹쳐 놓은 갈대·배 좌판의 `floating` 등이다.
+meta 저장소 `npm run santorini`(= `node scripts/santorini.mjs <이름>` → 3d-maker `maker prop`, castle·sunbed·prickly-pear는 `maker decimate`). 레시피는 meta `assets/santorini-*.prop.json`. 그다음 gltfpack 1.3.0 `-cc -vp 16 -vn 10 -kn -km -ke`로 Meshopt 압축했다(부겐빌레아 세 파일은 레시피 extras가 커서 `-ke` 없이; `EXT_meshopt_compression` 필요). 모두 `issues: []`. 남은 경고는 묻히는 기초·수면 아래로 인한 `min y`, 쓰지 않는 공용 팔레트 색, 서로 닿게 겹쳐 놓은 갈대·배 좌판의 `floating` 등이다.
