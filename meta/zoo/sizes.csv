@@ -1,0 +1,7 @@
+file,original_glb_bytes,texture_bytes,texture_percent,candidate_glb_bytes,changed_color_maps
+camel.glb,7074068,5661726,80.03,6233208,2
+chimp.glb,10374696,6634173,63.95,9995592,2
+giraffe.glb,7371268,4599635,62.40,6996956,2
+hippo.glb,6669972,4486036,67.26,5923476,2
+penguin.glb,3387376,2624654,77.48,3387376,0
+rhino.glb,4823732,3775194,78.26,4125548,1
