@@ -10,3 +10,12 @@ Split: 10 individual GLB files, each = 1 body (Body/Glass/Optics) + its 4 wheels
 All are centred on XZ, sit on Y=0, length along Z, front facing +Z, real-world scale (m).
 
 Changes: simplified meshes and resized/recompressed embedded textures. See manifest.json for triangle counts.
+
+car_drive.glb
+-------------
+Source model: "Generic Sedan Car" by MMC Works
+https://sketchfab.com/3d-models/generic-sedan-car-58c33766470d46e7b2aed542650494e5
+License: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+Requires attribution: "Generic Sedan Car" by MMC Works, CC BY 4.0.
+Changes: meshes decimated to ~48k triangles, textures resized to 512 px (JPEG unless alpha). Node hierarchy kept:
+the Name-Wheel.* nodes and steering-wheel_78 are driven in code. Front faces +Z, real-world scale (m).
