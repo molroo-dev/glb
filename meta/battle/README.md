@@ -4,7 +4,7 @@
 
 | 파일 | 용도 |
 |---|---|
-| `kaykit-combat.glb` | KayKit Rig_Medium 전투 클립만 담은 애니메이션 라이브러리(메시 없음): `Hit_A`, `Death_A`, `Spawn_Ground`, `Lie_StandUp`, `Melee_1H_Attack_Slice_Diagonal`, `Melee_2H_Attack_Stab`, `Ranged_Bow_Draw`, `Ranged_Bow_Release`. `../../molroo/animations/kaykit-medium.glb`와 같은 관절 이름이라 molroo 캐릭터에 그대로 붙는다 |
+| `kaykit-combat.glb` | KayKit Rig_Medium 전투 클립만 담은 애니메이션 라이브러리(메시 없음): `Hit_A`, `Death_A`, `Spawn_Ground`, `Lie_StandUp`, `Melee_1H_Attack_Slice_Diagonal`, `Melee_2H_Attack_Stab`, `Ranged_Bow_Draw`, `Ranged_Bow_Release`, `Ranged_Bow_Idle`(활을 든 대기 자세). `../../molroo/animations/kaykit-medium.glb`와 같은 관절 이름이라 molroo 캐릭터에 그대로 붙는다 |
 | `sword.glb` | 칼. KayKit Dungeon Pack 1.0 `sword_common` 원본 그대로. 손잡이가 원점, 날이 +y |
 | `spear.glb` | 창. Kenney Mini Arena `weapon-spear`, 텍스처(`colormap.png`)를 GLB 안에 넣음. 아래 끝이 원점, +y로 0.7 |
 | `bow.glb` | 활. Kenney Mini Forest `weapon-bow`, 텍스처 내장. 아래 끝이 원점, +y로 0.48 |
