@@ -4,7 +4,7 @@ Character meshes, embedded textures and rigs. **Animations are loaded separately
 
 | Character | Model | Preview | Shared motions |
 | --- | --- | --- | --- |
-| Bob coat | [bob-coat.glb](bob-coat.glb) | [bob-coat.png](bob-coat.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 clips |
+| Bob coat | [bob-coat.glb](bob-coat.glb) | [bob-coat.png](bob-coat.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb), 17 clips |
 | Boy | [boy.glb](boy.glb) | [boy.png](boy.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 clips |
 | Flower hat girl | [flower-hat-girl.glb](flower-hat-girl.glb) | [flower-hat-girl.png](flower-hat-girl.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 name-compatible clips; motion limits below |
 
@@ -12,28 +12,13 @@ Character meshes, embedded textures and rigs. **Animations are loaded separately
 
 ## Bob coat
 
-- Uncompressed GLB, **9,843,792 bytes**, two embedded1024x1024 base-color maps. No external textures or compression decoder required.
-- **Zero embedded clips.** Load the shared library once; bind its clips by original node name to each character instance. See the [loading example](../animations/README.md#load-once-reuse-per-character).
-- Body/Head/Neck:180,764 triangles,104,620 vertices. In v028 only the Head moved forward0.08m from v027 to restore the head balance. The straight v027 neck, head shape, collar, body, textures, rig and shared motions are unchanged.
-- Metres,+Y up,+Z forward, original origin/bind transforms; bind height approximately2.129m.
-- KayKit Rig_Medium,21 skin joints and original `handslot.l/r` sockets. This is not the older FD2 maker-v2 rig. No separate animator IK controls or facial morphs.
-- The512x512 preview shows Idle_A at0.3s. A loader that opens only the character file shows its default/bind pose until an external clip plays.
-
-## Verification and limits
-
-Source: `handmade-assets/assets/models/characters/full/bob-coat/v028/model.glb`. The combined original and previous delivery are preserved. Mesh positions/normals/UVs/indices/weights/materials/image bytes, inverse binds and node hierarchy are unchanged; unused animation accessors/buffers were removed. Current SHA-256:
-
-```text
-65d5f2144ca400af58d98f3e8279a84e3384ce1212a525f1947eb347d6e6fe78
-```
-
-Actual destination inspect/texture-inspect: exit0, issues/warnings empty. Separately loaded shared clips matched the former combined file at16 clips x32=512 poses: maximum joint-matrix error0 and sampled vertex distance0 (786,432 comparisons). Two skeleton-cloned instances shared clips while keeping independent skeleton state.
-
-Source static geometry/visual/neck-connection checks remain applicable. The20% coat-follow setting still has23 crossing poses in192 sampled lower-coat/pants walk ROI poses; other deep-motion folds remain. This does not certify continuous collision safety, cloth physics, gameplay behavior or runtime performance.
-
-The shared root-Y grounding correction is preserved from bob-coat v019. Other characters need matching rest transforms/proportions and their own sole/grounding review; sharing clips does not retarget arbitrary rigs or add foot IK.
-
-Editable Blender and the combined original remain in handmade-assets; v028 reuses the existing1024 donor atlas without new painting or resizing. Current separation record: `handmade-assets/validation/molroo-characters-distribution/v014/`; v001 records the earlier combined delivery. App code and remote hosting were not changed.
+- Source: `handmade-assets/assets/models/characters/full/bob-coat/v031/model.glb`. Head, coat, neck geometry and both generated base-color maps carry through to delivery.
+- `bob-coat.glb`: 8,258,956 bytes, 180,438 triangles, 103,816 vertices, three meshes, two embedded 1024×1024 base-color maps, zero embedded clips. Metres, +Y up, +Z forward, bind height about 2.220m.
+- The existing KayKit Rig_Medium hierarchy, 21 skin joints, inverse binds and hand sockets are preserved. Head uses a single joint. Body and Neck have fitted weights.
+- Load the 17 clips from the shared library by original node name. See the [loading example](../animations/README.md#load-once-reuse-per-character). The 512px preview shows shared Idle_A at 0.3s.
+- External binding and recombined playback matched over 544 sampled poses, with zero bone or sampled vertex error. Independent skeleton clones were verified. Structure and texture checks reported no issues or warnings.
+- Sampled body stretch reached 3.597× in Waving. Walking_C reached about 75mm below the ground in the sole ROI. Shared root-Y keys are unchanged. Continuous collision, native-engine behavior and performance remain untested.
+- SHA-256: `e28ec2158d8065fee31c38f11931fc29ff04b7041ce225bd22a37a1e5961da7e`. Delivery evidence and previous version: `handmade-assets/validation/molroo-characters-distribution/v016/`.
 
 ## Sources and notices
 
@@ -44,7 +29,6 @@ References were user-supplied/generated; shape/paint used Hunyuan3D Mini/Paint w
 
 The component CC0 notice is not a blanket license for the entire character. Staging/separation does not establish additional reference-image rights.
 
-V028 inherited limits: original v002 head texture shading and surface artifacts are inherited. Full intersection comparison exhausted the 5,000,000-pair budget; this is not complete collision validation. No new PBR/native-engine test.
 
 
 ## Boy
