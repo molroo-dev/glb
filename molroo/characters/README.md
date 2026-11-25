@@ -35,12 +35,12 @@ The component CC0 notice is not a blanket license for the entire character. Stag
 
 ![Boy Idle_A](boy.png)
 
-- Source: `handmade-assets/assets/models/characters/full/boy/v007/model.glb`. Shifted and refitted the neck under the jaw, matched its base color to the jaw atlas and included the user-painted body atlas. Both 1024px base-color atlases are embedded.
-- `boy.glb`: 8,981,144 bytes, 180,444 triangles, 107,506 vertices, three meshes, 21 KayKit Medium joints, original hand sockets and zero embedded clips. Metres, +Y up, +Z forward, bind height about 2.234m.
+- Source: `handmade-assets/assets/models/characters/full/boy/v008/model.glb`. Moved the lower neck 24 mm rearward toward the collar center and retained the jaw fit, neck color and user-painted body atlas. Both 1024px base-color atlases are embedded.
+- `boy.glb`: 8,981,148 bytes, 180,444 triangles, 107,506 vertices, three meshes, 21 KayKit Medium joints, original hand sockets and zero embedded clips. Metres, +Y up, +Z forward, bind height about 2.234m.
 - Load the current 17 clips by original node names from the [shared library](../animations/README.md#load-once-reuse-per-character). The 512px preview shows Idle_A at 0.3s.
 - Structure and texture checks passed. External binding and recombined playback matched across 544 poses, with zero bone matrix and sampled vertex error and independent skeleton clones.
 - Maximum sampled edge stretch: 2.911x in Running_B. Minimum sampled sole height: -90 mm in Walking_C. Shared root-Y keys are unchanged. Continuous collision, native-engine behavior and performance remain untested.
-- SHA-256: `af88d968594c61954252b57f3ac7a209e894fe929929998a538b23bffbf8d4d1`. Previous delivery and verification: `handmade-assets/validation/molroo-characters-distribution/v018/`.
+- SHA-256: `d20b8e0166330c85213ccbb6fed470e9edd616c63f706af9267bd905de00fee8`. Previous delivery and verification: `handmade-assets/validation/molroo-characters-distribution/v020/`.
 
 ## Flower hat girl
 
