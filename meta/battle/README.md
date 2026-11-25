@@ -1,20 +1,16 @@
-# meta/battle — 훈련소 대전 배포본
+﻿# Meta Battle 배포본
 
-`/battle` 장면(플레이어끼리 싸우는 링)용 정적 GLB. 미터·Y-up.
+`/battle` 장면용 정적 장비. 미터 단위, glTF Y-up. 일반 4종은 기존 파일명을 사용한다.
 
-| 파일 | 용도 |
-|---|---|
-| `kaykit-combat.glb` | KayKit Rig_Medium 전투 클립만 담은 애니메이션 라이브러리(메시 없음): `Hit_A`, `Death_A`, `Spawn_Ground`, `Lie_StandUp`, `Melee_1H_Attack_Slice_Diagonal`, `Melee_2H_Attack_Stab`, `Ranged_Bow_Draw`, `Ranged_Bow_Release`, `Ranged_Bow_Idle`(활을 든 대기 자세). `../../molroo/animations/kaykit-medium.glb`와 같은 관절 이름이라 molroo 캐릭터에 그대로 붙는다 |
-| `sword.glb` | 칼. KayKit Dungeon Pack 1.0 `sword_common` 원본 그대로. 손잡이가 원점, 날이 +y |
-| `spear.glb` | 창. Kenney Mini Arena `weapon-spear`, 텍스처(`colormap.png`)를 GLB 안에 넣음. 아래 끝이 원점, +y로 0.7 |
-| `bow.glb` | 활. Kenney Mini Forest `weapon-bow`, 텍스처 내장. 아래 끝이 원점, +y로 0.48 |
-| `arrow.glb` | 화살. Kenney Mini Forest `weapon-arrow`, 텍스처 내장. 가운데가 원점, 촉이 +z |
+| 장비 | 일반 | 레어 | 에픽 | 모델 기준 |
+|---|---|---|---|---|
+| 칼 | [GLB](sword.glb) | [GLB](sword-rare.glb) | [GLB](sword-epic.glb) | 손잡이 원점, 날 +Y |
+| 창 | [GLB](spear.glb) | [GLB](spear-rare.glb) | [GLB](spear-epic.glb) | 아래 끝 원점, +Y 0.7 m |
+| 활 | [GLB](bow.glb) | [GLB](bow-rare.glb) | [GLB](bow-epic.glb) | 아래 끝 원점, +Y 약 0.479 m |
+| 화살 | [GLB](arrow.glb) | [GLB](arrow-rare.glb) | [GLB](arrow-epic.glb) | 중앙 원점, 촉 +Z |
 
-장면이 무기 크기를 손 뼈 배율에 맞춰 다시 잡는다(meta `src/app/battle/Battle.tsx`의 `GEAR`).
+장면에서 `Battle.tsx`의 `GEAR`가 모델의 장착 배율과 파지점을 정한다. 활의 정적 시위는 `BowString` 노드다. 장착 상태에서는 이 노드를 숨긴 다음 루트 노드의 `extras.stringLower`와 `extras.stringUpper`를 움직이는 시위의 양 끝점으로 사용한다.
 
-## 원본·재현
+제작 원본과 검사 기록은 `H:/handmade-assets/assets/models/props/meta-battle-gear/v001`에 있다. 교체 전 파일은 해당 작업 폴더의 `reference/`와 배포 저장소의 Git 이력에서 확인할 수 있다. 이전 규격의 참고 출처는 KayKit Dungeon Pack과 Kenney Mini Arena·Mini Forest(CC0)다.
 
-- `kaykit-combat.glb`: meta 저장소 `node scripts/combat-clips.mjs <KayKit_Character_Animations_1.1/Animations/gltf/Rig_Medium>` → `../../kaykit/...`의 팩에서 클립만 잘라낸다.
-- Kenney 무기: `../../kenney/GLB/kenney_mini-arena`, `kenney_mini-forest_1.0`의 GLB에 `../../kenney/Textures/...`의 `colormap.png`를 bufferView로 넣었다.
-
-라이선스: KayKit(Kay Lousberg), Kenney 모두 CC0.
+[kaykit-combat.glb](kaykit-combat.glb)는 KayKit Rig_Medium 전투 애니메이션 라이브러리(CC0)다. meta 저장소의 `node scripts/combat-clips.mjs <Rig_Medium 경로>`로 생성한다.
