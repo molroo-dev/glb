@@ -116,10 +116,10 @@
       "file": "boy.glb",
       "preview": "boy.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/boy/v006/model.glb",
-      "source_version": "v006",
-      "bytes": 8821876,
-      "sha256": "b376ee3e0a2643d1b7fa12314c746f6bbdfb8ac6dc0e18fb47dab346c7a79b0a",
+      "source_path": "assets/models/characters/full/boy/v007/model.glb",
+      "source_version": "v007",
+      "bytes": 8981144,
+      "sha256": "af88d968594c61954252b57f3ac7a209e894fe929929998a538b23bffbf8d4d1",
       "triangles": 180444,
       "vertices": 107506,
       "meshes": [
@@ -181,10 +181,10 @@
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true,
-          "evidence": "handmade-assets/validation/molroo-characters-distribution/v017/binding-delivered.json"
+          "evidence": "handmade-assets/validation/molroo-characters-distribution/v018/binding-delivered.json"
         },
         "grounding": "Sampled minimum sole height -90 mm in Walking_C; existing root-Y retained",
-        "geometry_review": "Preserved v006 geometry and atlases; 408-pose stretch maximum 2.911x in Running_B; bind, Idle and Walking_A visually reviewed"
+        "geometry_review": "Refitted neck with user-painted atlas exported from Blender; 408-pose stretch maximum 2.911x in Running_B; bind, Idle_A and Crouching visually reviewed"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -218,8 +218,8 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "b35d54033ecf341524e093bcbd5670537d6acbe9608caed0fc0ca0260bae191b",
-      "delivery_transform": "Skin v006 to the previous Boy rig. Keep the shared animation library separate."
+      "source_delivery_sha256": "1f8985e0e133573afebf7b7ca37f657cfa216b9517c7c376d4766301e3c0bc22",
+      "delivery_transform": "Fit the neck and export the user-painted atlas. Keep the existing Boy rig and shared animation library."
     },
     {
       "id": "flower-hat-girl",
