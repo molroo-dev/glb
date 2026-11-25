@@ -5,7 +5,7 @@ Character meshes, embedded textures and rigs. **Animations are loaded separately
 | Character | Model | Preview | Shared motions |
 | --- | --- | --- | --- |
 | Bob coat | [bob-coat.glb](bob-coat.glb) | [bob-coat.png](bob-coat.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb), 17 clips |
-| Boy | [boy.glb](boy.glb) | [boy.png](boy.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 clips |
+| Boy | [boy.glb](boy.glb) | [boy.png](boy.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb), 17 clips |
 | Flower hat girl | [flower-hat-girl.glb](flower-hat-girl.glb) | [flower-hat-girl.png](flower-hat-girl.png) | [kaykit-medium.glb](../animations/kaykit-medium.glb),16 name-compatible clips; motion limits below |
 
 ![Bob coat with shared Idle_A](bob-coat.png)
@@ -35,13 +35,12 @@ The component CC0 notice is not a blanket license for the entire character. Stag
 
 ![Boy Idle_A](boy.png)
 
-- Source: `handmade-assets/assets/models/characters/full/boy/v005/`. Prior crown correction and sleeve20% volume retained. Added local shoulder15% volume and widened chest/upperarm weight transition; hands retained. Adopted for fuller arms after the user's follow-up request.
-- `boy.glb`: 8,190,832 bytes,180,760 triangles,103,891 vertices,three meshes,21 KayKit Medium joints,two embedded1024px base-color maps,zero embedded clips. Metres,+Y up,+Z forward.
-- Load the16 clips from `../animations/kaykit-medium.glb` by original node names. Combined vs separate library:512 poses,786,432 sampled vertex comparisons,bone/vertex error0; skeleton clones independent. All16 clips also passed32-sample edge-stretch checks with limit3. This does not certify continuous collision safety.
-- Shoulder comparison: all16 clips x9=144 ROI poses had no overlap-pair increase versus v004. Remaining sharp shoulder folds/overlaps are documented; this is not continuous collision safety. Before/after worst sampled poses were reviewed from front/rear.
-- Preview: actual final mesh,Idle_A at0.3s,768px Workbench studio texture. Fine brown color variation and earlier texture/grounding/intersection limits remain. Target-game/PBR controls/physics/FPS were not re-tested.
-- Previous delivery/preview/manifest/README: `handmade-assets/validation/molroo-characters-distribution/v011/previous/`. Current publication checks and hashes: `handmade-assets/validation/molroo-characters-distribution/v011/` and this manifest. Bob coat and shared animations unchanged.
-
+- Source: `handmade-assets/assets/models/characters/full/boy/v006/model.glb`. Delivery preserves the separately modeled head, torso, fitted neck and both 1024px base-color atlases.
+- `boy.glb`: 8,821,876 bytes, 180,444 triangles, 107,506 vertices, three meshes, 21 KayKit Medium joints, original hand sockets and zero embedded clips. Metres, +Y up, +Z forward, bind height about 2.234m.
+- Load the current 17 clips by original node names from the [shared library](../animations/README.md#load-once-reuse-per-character). The 512px preview shows Idle_A at 0.3s.
+- Structure and texture checks passed. External binding and recombined playback matched across 544 poses, with zero bone matrix and sampled vertex error and independent skeleton clones.
+- Maximum sampled edge stretch: 2.911x in Running_B. Minimum sampled sole height: -90 mm in Walking_C. Shared root-Y keys are unchanged. Continuous collision, native-engine behavior and performance remain untested.
+- SHA-256: `b376ee3e0a2643d1b7fa12314c746f6bbdfb8ac6dc0e18fb47dab346c7a79b0a`. Previous delivery and verification: `handmade-assets/validation/molroo-characters-distribution/v017/`.
 
 ## Flower hat girl
 

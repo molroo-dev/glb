@@ -116,12 +116,12 @@
       "file": "boy.glb",
       "preview": "boy.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/boy/v005/distribution/boy.glb",
-      "source_version": "v005",
-      "bytes": 8190832,
-      "sha256": "24c5ec8e5f29f6fc4d15697f0dee2241424bc03bb86559bae705ada0cbede479",
-      "triangles": 180760,
-      "vertices": 103891,
+      "source_path": "assets/models/characters/full/boy/v006/model.glb",
+      "source_version": "v006",
+      "bytes": 8821876,
+      "sha256": "b376ee3e0a2643d1b7fa12314c746f6bbdfb8ac6dc0e18fb47dab346c7a79b0a",
+      "triangles": 180444,
+      "vertices": 107506,
       "meshes": [
         "Body",
         "Head",
@@ -130,7 +130,7 @@
       "units": "metres",
       "up_axis": "+Y",
       "forward_axis": "+Z",
-      "bind_height_m": 2.129,
+      "bind_height_m": 2.234,
       "rig": {
         "family": "KayKit Rig_Medium",
         "skin_joints": 21,
@@ -143,8 +143,8 @@
       "preview_clip": "Idle_A",
       "preview_time_seconds": 0.3,
       "preview_size_px": [
-        768,
-        768
+        512,
+        512
       ],
       "textures": {
         "embedded_base_color_maps": 2,
@@ -155,11 +155,9 @@
       },
       "required_extensions": [],
       "known_limitations": [
-        "Prior crown correction and sleeve20% volume retained; extra local shoulder15% gain and chest/upperarm weight transition widened",
-        "Sharp shoulder folds and sampled local overlaps remain; not a collision-free model",
-        "16 clips x9 shoulder ROI samples had no overlap-pair increase over v004; this is not continuous or whole-body collision coverage",
-        "Existing texture variation and grounding/full-intersection-scan limits remain",
-        "No target-game/controller/physics/FPS test"
+        "Sampled maximum edge stretch 2.911x in Running_B, diagnostic limit 3x",
+        "Minimum sampled sole height -90 mm in Walking_C; shared root-Y keys retained",
+        "Continuous collision, native-engine behavior and performance untested"
       ],
       "verification": {
         "destination_inspect": {
@@ -177,16 +175,16 @@
           "warnings": []
         },
         "shared_animation_binding": {
-          "clips": 16,
-          "poses": 512,
-          "sampled_vertex_comparisons": 786432,
+          "clips": 17,
+          "poses": 544,
+          "sampled_vertex_comparisons": 835584,
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true,
-          "evidence": "Source distribution/binding-check.json; actual destination byte-identical, plus v011/binding-check.json"
+          "evidence": "handmade-assets/validation/molroo-characters-distribution/v017/binding-delivered.json"
         },
-        "grounding": "Source grounding.json: idle soles about 0.002m; Waving lifts about 0.030m; other clips vary",
-        "geometry_review": "v005 local shoulder volume and chest/upperarm weights; unchanged head/maps/rig/clips; 512-pose stretch passed; 144 shoulder ROI poses showed no overlap-pair increase; all16 worst sampled clips reviewed front/rear; folds and overlaps remain"
+        "grounding": "Sampled minimum sole height -90 mm in Walking_C; existing root-Y retained",
+        "geometry_review": "Preserved v006 geometry and atlases; 408-pose stretch maximum 2.911x in Running_B; bind, Idle and Walking_A visually reviewed"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -197,13 +195,14 @@
       "animation_library": {
         "id": "kaykit-medium",
         "file": "../animations/kaykit-medium.glb",
-        "sha256": "7e2b5b4d881ffd9e089b66757c2c064006d1038bd6aefca6a93eab7440536ba1",
+        "sha256": "b52a3ecb47c850548b980f8902358cf3fee284f580440b943b051a159a3b7767",
         "binding": "original_node_name",
         "clips": [
           "Idle_A",
           "Idle_B",
           "Walking_A",
           "Walking_B",
+          "Walking_C",
           "Walking_Backwards",
           "Running_A",
           "Running_B",
@@ -219,8 +218,8 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "24c5ec8e5f29f6fc4d15697f0dee2241424bc03bb86559bae705ada0cbede479",
-      "delivery_transform": "No geometry transform; zero embedded animations; shared clips loaded separately"
+      "source_delivery_sha256": "b35d54033ecf341524e093bcbd5670537d6acbe9608caed0fc0ca0260bae191b",
+      "delivery_transform": "Skin v006 to the previous Boy rig. Keep the shared animation library separate."
     },
     {
       "id": "flower-hat-girl",
