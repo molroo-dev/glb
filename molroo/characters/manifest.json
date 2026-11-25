@@ -8,10 +8,10 @@
       "file": "bob-coat.glb",
       "preview": "bob-coat.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/bob-coat/v031/model.glb",
-      "source_version": "v031",
-      "bytes": 8258956,
-      "sha256": "e28ec2158d8065fee31c38f11931fc29ff04b7041ce225bd22a37a1e5961da7e",
+      "source_path": "assets/models/characters/full/bob-coat/v032/model.glb",
+      "source_version": "v032",
+      "bytes": 8258976,
+      "sha256": "c76b81234cb1289e6be9ec19e64fb6136938136384bcaee3fa2a95b5fd342c86",
       "triangles": 180438,
       "vertices": 103816,
       "meshes": [
@@ -73,9 +73,9 @@
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true,
-          "evidence": "handmade-assets/validation/molroo-characters-distribution/v016/binding-delivered.json; external binding vs recombined v031"
+          "evidence": "handmade-assets/validation/molroo-characters-distribution/v019/binding-delivered.json; external binding vs recombined v032"
         },
-        "inherited_geometry_review": "v031 static shape and base-color atlases preserved; prior bob-coat Rig_Medium nodes and inverse binds preserved"
+        "inherited_geometry_review": "Neck fit and base color updated; head and coat geometry and both atlases preserved; prior bob-coat Rig_Medium nodes and inverse binds preserved"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -108,8 +108,8 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "d9889fd640f95b987773079ee81af9ac623db3365d8a2cb00b04b193c0ac9a88",
-      "delivery_transform": "Skin v031 to the existing KayKit rig with continuous body/neck weights and single-joint head weights. Keep shared clips separate."
+      "source_delivery_sha256": "305b2c94bb4de04e4090004f32a126a121f75b393d404d5a9dd12f23881a6f3f",
+      "delivery_transform": "Skin v032 to the existing KayKit rig with continuous body/neck weights and single-joint head weights. Keep shared clips separate."
     },
     {
       "id": "boy",
