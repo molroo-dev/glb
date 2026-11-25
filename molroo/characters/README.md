@@ -12,13 +12,13 @@ Character meshes, embedded textures and rigs. **Animations are loaded separately
 
 ## Bob coat
 
-- Source: `handmade-assets/assets/models/characters/full/bob-coat/v032/model.glb`. The neck moved 16 mm rearward and its base color was sampled from the face atlas under the jaw.
-- `bob-coat.glb`: 8,258,976 bytes, 180,438 triangles, 103,816 vertices, three meshes, two embedded 1024×1024 base-color maps, zero embedded clips. Metres, +Y up, +Z forward, bind height about 2.220m.
+- Source: `handmade-assets/assets/models/characters/full/bob-coat/v033/model.glb`. The head was lowered 25 mm and the neck compressed vertically. The hair underside was locally fitted above the collar.
+- `bob-coat.glb`: 8,259,480 bytes, 180,438 triangles, 103,825 vertices, three meshes, two embedded 1024×1024 base-color maps, zero embedded clips. Metres, +Y up, +Z forward, bind height about 2.195m.
 - The existing KayKit Rig_Medium hierarchy, 21 skin joints, inverse binds and hand sockets are preserved. Head uses a single joint. Body and Neck have fitted weights.
 - Load the 17 clips from the shared library by original node name. See the [loading example](../animations/README.md#load-once-reuse-per-character). The 512px preview shows shared Idle_A at 0.3s.
 - External binding and recombined playback matched over 544 sampled poses, with zero bone or sampled vertex error. Independent skeleton clones were verified. Structure and texture checks reported no issues or warnings.
 - Sampled body stretch reached 3.597× in Waving. Walking_C reached about 75mm below the ground in the sole ROI. Shared root-Y keys are unchanged. Continuous collision, native-engine behavior and performance remain untested.
-- SHA-256: `c76b81234cb1289e6be9ec19e64fb6136938136384bcaee3fa2a95b5fd342c86`. Delivery evidence and previous version: `handmade-assets/validation/molroo-characters-distribution/v019/`.
+- SHA-256: `01fa574973b5835060c32ab951ffbc5494df9501c23746211c281918f0648228`. Delivery evidence and previous version: `handmade-assets/validation/molroo-characters-distribution/v021/`.
 
 ## Sources and notices
 

@@ -8,12 +8,12 @@
       "file": "bob-coat.glb",
       "preview": "bob-coat.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/bob-coat/v032/model.glb",
-      "source_version": "v032",
-      "bytes": 8258976,
-      "sha256": "c76b81234cb1289e6be9ec19e64fb6136938136384bcaee3fa2a95b5fd342c86",
+      "source_path": "assets/models/characters/full/bob-coat/v033/model.glb",
+      "source_version": "v033",
+      "bytes": 8259480,
+      "sha256": "01fa574973b5835060c32ab951ffbc5494df9501c23746211c281918f0648228",
       "triangles": 180438,
-      "vertices": 103816,
+      "vertices": 103825,
       "meshes": [
         "Body",
         "Head",
@@ -22,7 +22,7 @@
       "units": "metres",
       "up_axis": "+Y",
       "forward_axis": "+Z",
-      "bind_height_m": 2.22,
+      "bind_height_m": 2.195,
       "rig": {
         "family": "KayKit Rig_Medium",
         "skin_joints": 21,
@@ -73,9 +73,9 @@
           "max_bone_matrix_error": 0,
           "max_vertex_distance_m": 0,
           "independent_instances": true,
-          "evidence": "handmade-assets/validation/molroo-characters-distribution/v019/binding-delivered.json; external binding vs recombined v032"
+          "evidence": "handmade-assets/validation/molroo-characters-distribution/v021/binding-delivered.json; external binding vs recombined v033"
         },
-        "inherited_geometry_review": "Neck fit and base color updated; head and coat geometry and both atlases preserved; prior bob-coat Rig_Medium nodes and inverse binds preserved"
+        "inherited_geometry_review": "Shortened neck and locally fitted hair underside; coat geometry and both atlases preserved; prior bob-coat Rig_Medium nodes and inverse binds preserved"
       },
       "notices": [
         "licenses/License-KayKit.txt",
@@ -108,8 +108,8 @@
         ],
         "grounding_reference": "bob-coat/v019"
       },
-      "source_delivery_sha256": "305b2c94bb4de04e4090004f32a126a121f75b393d404d5a9dd12f23881a6f3f",
-      "delivery_transform": "Skin v032 to the existing KayKit rig with continuous body/neck weights and single-joint head weights. Keep shared clips separate."
+      "source_delivery_sha256": "a9cc5885c3685dff76230598e7729fcffeb26d3638f5b359ec7063a3d039210b",
+      "delivery_transform": "Skin v033 to the existing KayKit rig with continuous body/neck weights and single-joint head weights. Keep shared clips separate."
     },
     {
       "id": "boy",
