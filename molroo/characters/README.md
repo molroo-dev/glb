@@ -54,3 +54,9 @@ The component CC0 notice is not a blanket license for the entire character. Stag
 - Grounding review:32 times per clip on original shoe/cuff ROI vertices. Idle_A soles about+1.5~1.7mm,Walking_A minimum about-23.7mm,Walking_B minimum about-24.6mm,Waving about+55.4mm. Running/jump positive ranges may be flight. Shared keys and source rig/weights were retained; no character-specific grounding correction was added.
 - Current destination structural/map checks and binding evidence: `handmade-assets/validation/molroo-characters-distribution/v015/`. Original body/head map bytes and all mesh/rig data preserved. Remaining face/hand tone differences, hat/glasses/scarf/shoe paint artifacts and separately embedded neck ends are inherited/documented. No complete continuous collision,target-game/controller/physics or runtime performance test.
 - Local publication only; existing Bob coat/Boy assets and animation library GLB unchanged. Common licenses/notices above apply; original user reference provenance remains with source records.
+
+## Father
+
+Father v002 uses separate Body and Head meshes, fitted to the shared KayKit Medium rig with 21 joints and hand sockets. The GLB contains 209,998 triangles, two embedded 1024×1024 maps, and zero embedded clips. The thumbnail renders shared Idle_A at 0.3s.
+
+External playback matched the recombined library across 544 sampled poses. Walking_C soles reached about 65mm below ground in samples. Full deformation quality and continuous collision are unverified.

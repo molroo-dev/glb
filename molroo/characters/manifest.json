@@ -1,7 +1,7 @@
 {
   "namespace": "molroo/characters",
   "format": "GLB",
-  "count": 3,
+  "count": 4,
   "assets": [
     {
       "id": "bob-coat",
@@ -425,6 +425,54 @@
       ],
       "source_delivery_sha256": "8548c51b420d0db7e0743a28c1e6312f3e224050d7cf6ef2c76e8cb15c06ad66",
       "delivery_transform": "Byte-identical zero-clip source; user body paint, geometry, rig, weights and rigid head placement retained"
+    },
+    {
+      "id": "father",
+      "file": "father.glb",
+      "preview": "father.png",
+      "source_project": "handmade-assets",
+      "source_path": "assets/models/characters/full/father/v002/assembled-fitted/model.glb",
+      "source_version": "v002",
+      "bytes": 9780764,
+      "sha256": "78c0b841b7b2feb171e9dd785e533319476a3c417d904a15971f23fa67ced0fe",
+      "triangles": 209998,
+      "vertices": 121779,
+      "meshes": [
+        "Body",
+        "Head"
+      ],
+      "units": "metres",
+      "up_axis": "+Y",
+      "forward_axis": "+Z",
+      "bind_height_m": 1.906,
+      "rig": {
+        "family": "KayKit Rig_Medium",
+        "skin_joints": 21,
+        "sockets": [
+          "handslot.l",
+          "handslot.r"
+        ]
+      },
+      "animations": [],
+      "preview_clip": "Idle_A",
+      "preview_time_seconds": 0.3,
+      "preview_size_px": [
+        512,
+        512
+      ],
+      "textures": {
+        "embedded_base_color_maps": 2
+      },
+      "shared_animations": "../animations/kaykit-medium.glb",
+      "known_limitations": [
+        "Walking_C sampled soles reach about 65mm below ground",
+        "Continuous collision and full deformation quality are unverified"
+      ],
+      "notices": [
+        "licenses/License-KayKit.txt",
+        "licenses/License-Hunyuan3D-2.0.txt",
+        "licenses/NOTICE-Hunyuan3D-2.0.txt"
+      ]
     }
   ]
 }
