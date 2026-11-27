@@ -57,6 +57,6 @@ The component CC0 notice is not a blanket license for the entire character. Stag
 
 ## Father
 
-Father v002 uses separate Body and Head meshes, fitted to the shared KayKit Medium rig with 21 joints and hand sockets. The GLB contains 209,998 triangles, two embedded 1024×1024 maps, and zero embedded clips. The thumbnail renders shared Idle_A at 0.3s.
+Father v003 uses a regenerated body with a narrow neck and the adjusted head placement. It uses separate Body and Head meshes, fitted to the shared KayKit Medium rig with 21 joints and hand sockets. The GLB contains 209,970 triangles, two embedded 1024×1024 maps, and zero embedded clips. The thumbnail renders shared Idle_A at 0.3s.
 
-External playback matched the recombined library across 544 sampled poses. Walking_C soles reached about 65mm below ground in samples. Full deformation quality and continuous collision are unverified.
+External playback matched the recombined library across 544 sampled poses. Walking_C soles reached about 69mm below ground in samples. Full deformation quality and continuous collision are unverified.

@@ -431,12 +431,12 @@
       "file": "father.glb",
       "preview": "father.png",
       "source_project": "handmade-assets",
-      "source_path": "assets/models/characters/full/father/v002/assembled-fitted/model.glb",
-      "source_version": "v002",
-      "bytes": 9780764,
-      "sha256": "78c0b841b7b2feb171e9dd785e533319476a3c417d904a15971f23fa67ced0fe",
-      "triangles": 209998,
-      "vertices": 121779,
+      "source_path": "assets/models/characters/full/father/v003/assembled-forward/model.glb",
+      "source_version": "v003",
+      "bytes": 9639060,
+      "sha256": "c51c826b51a1940ce0dbc871284a7e64b233f08c6909ad36f91452d386542482",
+      "triangles": 209970,
+      "vertices": 120173,
       "meshes": [
         "Body",
         "Head"
@@ -444,7 +444,7 @@
       "units": "metres",
       "up_axis": "+Y",
       "forward_axis": "+Z",
-      "bind_height_m": 1.906,
+      "bind_height_m": 1.936,
       "rig": {
         "family": "KayKit Rig_Medium",
         "skin_joints": 21,
@@ -465,7 +465,7 @@
       },
       "shared_animations": "../animations/kaykit-medium.glb",
       "known_limitations": [
-        "Walking_C sampled soles reach about 65mm below ground",
+        "Walking_C sampled soles reach about 69mm below ground",
         "Continuous collision and full deformation quality are unverified"
       ],
       "notices": [
