@@ -15,3 +15,5 @@
 meta 저장소 `node scripts/earth.mjs <signboard|flagpole|boat>` → 3d-maker `maker prop`. 레시피는 meta `assets/earth-<이름>.prop.json`. 압축하지 않았다. 모두 `issues: []`. 경고는 `not on the ground` 하나씩(푯말의 `stone6: floating`은 땅에 놓인 돌): 푯말과 깃대는 비탈에서 뜨지 않게 0.15–0.2 m 묻은 것이고, 보트는 용골이 수면 아래 0.15 m까지 잠긴 것이라 모두 의도된 것.
 
 `flags/uk.webp` (added 2026-11-26): 768×384, converted from the same set's gb.svg.
+
+`flags/space.webp` (added 2026-11-28): 768×512, 우주 (나로 우주센터) 푯말의 깃발. 국기가 아니라 meta에서 PIL로 그린 것(남색 밤하늘·고리 두른 지구·별).
